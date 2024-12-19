@@ -1,0 +1,45 @@
+:root { --shadow: #C9C9C9; --sub: #FFE24D; --subshadow: #DFBD0E; --bg: #2A82C2; --bg2: #56A01B; --bg3: #1FA39B; --bg4: #C25C7A; --bg5: #7264AD; --iconBtn1: #E0F3FB; --iconBtn2: #E6FAD5; --iconBtn3: #E7F5F4; --iconBtn4: #FFF0F4; --iconBtn5: #EEE9FF; } 
+
+
+#intro1 { background: url('../img/intro1_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro2 { background: url('../img/intro2_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro3 { background: url('../img/intro3_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro4 { background: url('../img/intro4_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro5 { background: url('../img/intro5_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+
+.container { position: relative; width: 1280px; height: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 116px 165px; } 
+
+.intro h1 { font-size: 3rem; } 
+
+.ico_walk { position: absolute; left: 0; top: 0; z-index: 5; width: 200px; height: 250px; background: url('../img/char_walk.gif') no-repeat; background-size: 84% auto; background-position: 15px 17px; } 
+.ico_see { position: absolute; left: 0; top: 0; z-index: 5; width: 200px; height: 270px; background: url('../img/char_see.gif') no-repeat; background-size: 82% auto; background-position: 15px 17px; } 
+
+
+.form_box,.form { display: flex; flex-direction: column; align-items: center; padding-top: 78px; } 
+.form_box,.form2 { display: flex; flex-direction: column; align-items: center; padding-top: 55px; } 
+
+.check4 .image-box { position: relative; width: 260px; height: 260px; border-radius: 20px; box-shadow: 0px 12px var(--shadow); background-size: 224px auto; background-position: 50% 20%; display: flex; flex-direction: column; justify-content: flex-end; background-repeat: no-repeat; background-color: #fff; cursor: pointer; } 
+
+.check3 .image-box { position: relative; width: 320px; height: 305px; border-radius: 20px; box-shadow: 0px 12px var(--shadow); background-size: 280px auto; background-position: 50% 20%; display: flex; flex-direction: column; justify-content: flex-end; background-repeat: no-repeat; background-color: #fff; cursor: pointer; } 
+
+.box_wrap:active .image-box { background-color: var(--shadow); transform: translate(0, 10px); box-shadow: none; } 
+
+.checkbox { position: absolute; top: 16px; right: 15px; width: 48px; height: 48px; display: none; } 
+
+input[type="checkbox"]:checked+.checkbox { display: block; } 
+
+.image-text { text-align: center; border-radius: 0 0 20px 20px; font-weight: 500; font-size: 1.4rem; padding-bottom: 20px; } 
+
+.check_wrap { display: flex; justify-content: center; gap: 12px; } 
+
+.check3 { gap: 35px; } 
+
+.submit-button { margin-top: 92px; padding: 13px 73px; border-radius: 50px; font-size: 1.8rem; font-weight: bold; background: var(--sub); box-shadow: 0px 8px var(--subshadow); } 
+
+.submit-button:active { box-shadow: none; transform: translate(0, 10px); background: var(--subshadow); } 
+
+/* 학습계획 체크박스3개 */
+.check3_btn { margin-top: 70px; } 
+
+
+.btn_box { width: 100%; display: flex; justify-content: center; align-items: center;  }

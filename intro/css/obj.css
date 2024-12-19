@@ -1,0 +1,86 @@
+@charset "UTF-8"; /*reset css*/
+* { font-family: Pretendard, "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; word-break: keep-all; } 
+
+html,body,div,p,span,strong,b,em,iframe,pre,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,
+fieldset,form,legend,label,table,caption,thead,tbody,tfoot,tr,th,td,
+ul,ol,li,a,input,select,textarea,figure { margin: 0; padding: 0; border: 0 none; } 
+
+input { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+
+body { font-family: Pretendard, "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; font-size: 18px; font-weight: light; line-height: 33px; color: #212529; position: relative; overflow: hidden; align-items: center; } 
+
+strong { font-weight: 500; } 
+
+ul,ol,li { list-style: none; } 
+em,address { font-style: normal; } 
+img { border: 0 none; font-size: 0; line-height: 0; } 
+sup { position: relative; top: 2px; font-size: 8px; line-height: 100%; } 
+
+/*테이블 만들 때 캡션 잊어버리지 말기..*/
+table { border-collapse: collapse; border-spacing: 0; } 
+caption { overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; } 
+th,td { vertical-align: middle; /* white-space: nowrap */ } 
+
+a { color: #333; text-decoration: none; line-height: 1; } 
+a:hover,a:focus,a:active { text-decoration: underline; } 
+a:visited { color: #333; } 
+*,
+html { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+*,
+*:before,
+*:after { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+
+button { border: none; appearance: none; -webkit-appearance: none; -moz-appearance: none; font-family: "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; cursor: pointer; margin: 0; } 
+
+select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; } 
+
+
+/* Layout */
+.wrap { width: 1280px; height: 800px; margin: 0 auto; position: relative; z-index: 1;} 
+
+.title_wrap {font-family: Pretendard,"Pretendard",sans-serif; height: 50px; display: flex; align-items: center; background-color: #fff; font-size: 18px; font-weight: 400; gap: 8px; line-height: 144.5%; padding-left: 80px; position: relative; z-index: 99;}
+.arrow { width: 1em; height: 1em; background: url('../img/arrow.svg') no-repeat; background-size: 100% 100%;}
+.intro { color: #212529; font-family: Pretendard,"Pretendard",sans-serif; }
+.title { font-weight: 700; font-family: Pretendard,"Pretendard",sans-serif; }
+
+
+.container { width: 100%; height: 750px; display: flex; align-items: center; position: relative; z-index: 1; } 
+.bg1 { background: url('../img/lesson_bg1.png') no-repeat; background-size: 100% 100%; } 
+.bg2 { background: url('../img/lesson_bg2.png') no-repeat; background-size: 100% 100%; } 
+.bg3 { background: url('../img/lesson_bg3.png') no-repeat; background-size: 100% 100%; } 
+.bg4 { background: url('../img/lesson_bg4.png') no-repeat; background-size: 100% 100%; } 
+.bg5 { background: url('../img/lesson_bg5.png') no-repeat; background-size: 100% 100%; } 
+
+/* 단원별 움직이는 아이콘 */
+.icon_1 { width: 100%; height: 100%; background: url('../img/icon1.gif') no-repeat; background-size: 32% auto; background-position: 0 0; position: absolute; z-index: 2; }
+.icon_2 { width: 100%; height: 100%; background: url('../img/icon2.gif') no-repeat; background-size: 30% auto; background-position: 0 0; position: absolute; z-index: 2; }
+.icon_3 { width: 100%; height: 100%; background: url('../img/icon3.gif') no-repeat; background-size: 30% auto; background-position: 0 0; position: absolute; z-index: 2; }
+.icon_4 { width: 100%; height: 100%; background: url('../img/icon4.gif') no-repeat; background-size: 30% auto; background-position: 0 0; position: absolute; z-index: 2; }
+.icon_5 { width: 100%; height: 100%; background: url('../img/icon5.gif') no-repeat; background-size: 30% auto; background-position: 0 0; position: absolute; z-index: 2; }
+
+
+/* 차시별 캐릭터 */
+.char_1 { width: 100%; height: 100%; background: url('../img/char1-3.gif') no-repeat; background-size: 30% auto; background-position: 2% 86%; position: absolute; z-index: 2;}
+.char_4 { width: 100%; height: 100%; background: url('../img/char4.gif') no-repeat; background-size: 24% auto; background-position: 5% 91%; position: absolute; z-index: 2;}
+.char_5 { width: 100%; height: 100%; background: url('../img/char5.gif') no-repeat; background-size: 24% auto; background-position: 5% 91%; position: absolute; z-index: 2;}
+.char_6 { width: 100%; height: 100%; background: url('../img/char6.gif') no-repeat; background-size: 24% auto; background-position: 5% 91%; position: absolute; z-index: 2;}
+.char_7 { width: 100%; height: 100%; background: url('../img/char7.gif') no-repeat; background-size: 24% auto; background-position: 7% 100%; position: absolute; z-index: 2;}
+.char_8 { width: 100%; height: 100%; background: url('../img/char8.gif') no-repeat; background-size: 30% auto; background-position: 2% 98%; position: absolute; z-index: 2;}
+.char_9 { width: 100%; height: 100%; background: url('../img/char9.gif') no-repeat; background-size: 26% auto; background-position: 7% 98%; position: absolute; z-index: 2;}
+.char_10 { width: 100%; height: 100%; background: url('../img/char10.gif') no-repeat; background-size: 32% auto; background-position: 1% 89%; position: absolute; z-index: 2;}
+.char_11 { width: 100%; height: 100%; background: url('../img/char11.gif') no-repeat; background-size: 28% auto; background-position: 4% 91%; position: absolute; z-index: 2;}
+.char_12 { width: 100%; height: 100%; background: url('../img/char12.gif') no-repeat; background-size: 28% auto; background-position: 4% 95%; position: absolute; z-index: 2;}
+.char_13 { width: 100%; height: 100%; background: url('../img/char13.gif') no-repeat; background-size: 28% auto; background-position: 4% 95%; position: absolute; z-index: 2;}
+.char_14 { width: 100%; height: 100%; background: url('../img/char14.gif') no-repeat; background-size: 26% auto; background-position: 4% 95%; position: absolute; z-index: 2;}
+.char_15 { width: 100%; height: 100%; background: url('../img/char15.gif') no-repeat; background-size: 26% auto; background-position: 4% 95%; position: absolute; z-index: 2;}
+.char_16 { width: 100%; height: 100%; background: url('../img/char16.gif') no-repeat; background-size: 25% auto; background-position: 5% 92%; position: absolute; z-index: 2;}
+.char_17 { width: 100%; height: 100%; background: url('../img/char17.gif') no-repeat; background-size: 25% auto; background-position: 5% 92%; position: absolute; z-index: 2;}
+
+.txt_wrap { margin-left: 38%; font-family: Pretendard,"Pretendard",sans-serif; }
+.txt_wrap span { display: block; font-size: 56px; font-weight: 700; padding-bottom: 64px; letter-spacing: -1.786px; font-family: Pretendard,"Pretendard",sans-serif;} 
+.txt_wrap ul li { font-size: 24px; color: #333; font-weight: 500; line-height: 52px; letter-spacing: -1.786px; font-family: Pretendard,"Pretendard",sans-serif;}
+
+.txt_que { background: url('../img/q.svg') no-repeat; margin-top: 64px; font-size: 23px; padding-left: 45px; font-family: Pretendard,"Pretendard",sans-serif;}

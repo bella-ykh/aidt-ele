@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="씨마스" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>10-골라 볼까요?</title>
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/plan_check.css">
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+    <script src="https://acv001.aiktbook.com/api/static/message-channel-iframe.js"></script>
+</head>
+
+<body>
+    <div id="intro3" class="container intro">
+        <h1>이번 단원에서 무엇을 배우고 싶은지 골라 볼까요?</h1>
+        <div class="ico_walk"><!--걷는 캐릭터--></div>
+        <form id="frm350" class="form" onsubmit="return false">
+            <input type="hidden" name="aidt_pageTitle" value="초3단원 도입 학습계획">
+            <input type="hidden" name="aidt_examId" value="1">
+            <input type="hidden" name="aidt_exam" value="이번 단원에서 무엇을 배우고 싶은지 골라 볼까요?">
+            <input type="hidden" name="aidt_answer" value="">
+            <input type="hidden" name="aidt_mcqYn" value="N">
+            <input type="hidden" name="aidt_type" value="checkbox">
+            <div class="check_wrap check4">
+                <div class="box_wrap">
+                    <label class="image-box">
+                        <input type="checkbox" name="aidt_input" data-group-id="1" value="컴퓨터는 누구의 명령에 따라 움직일까요?" style="display:none;">
+                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked1">
+                        <div class="image-text">컴퓨터는 누구의 명령에 따라 움직일까요?</div>
+                    </label>
+                </div>
+                <div class="box_wrap">
+                    <label class="image-box">
+                        <input type="checkbox" name="aidt_input" data-group-id="1" value="요리를 할 때 순서를 정하는 것처럼, 컴퓨터도 순서에 따라 일을 할까요?" style="display:none;">
+                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked2">
+                        <div class="image-text">요리를 할 때 순서를 정하는 것처럼, 컴퓨터도 순서에 따라 일을 할까요?</div>
+                    </label>
+                </div>
+                <div class="box_wrap">
+                    <label class="image-box">
+                        <input type="checkbox" name="aidt_input" data-group-id="1" value="우리가 사용하는 앱은 어떻게 만들어질까요?" style="display:none;">
+                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked3">
+                        <div class="image-text">우리가 사용하는 앱은 어떻게 만들어질까요?</div>
+                    </label>
+                </div>
+                <div class="box_wrap">
+                    <label class="image-box">
+                        <input type="checkbox" name="aidt_input" data-group-id="1" value="게임을 만들고 싶다면, 어떤 과정으로 만들어야 할까요?" style="display:none;">
+                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked4">
+                        <div class="image-text">게임을 만들고 싶다면, 어떤 과정으로 만들어야 할까요?</div>
+                    </label>
+                </div>
+            </div>
+            <div class="btn_box">
+                <button id="btn1" type="submit" class="submit-button">제출하기</button>
+                <button id="btn1_1" type="submit" class="submit-button" style="display: none">다시 제출하기</button>    
+            </div>
+        </form>
+        <div id="modal" class="modal hide">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="result">제출되었습니다.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const child = new ClientAPI();
+
+        //제출 여부 받아서 버튼 제어
+        child.receiveMessage((data)=>{
+            if(data.submitYn === 'Y'){
+                document.getElementById('btn1_1').style.display = ""; //다시제출 버튼 표시
+                document.getElementById('btn1').style.display = "none"; //제출 버튼 숨기기
+            }
+        });
+
+        //제출 버튼
+        const btn1 = document.getElementById('btn1');
+        btn1.addEventListener('click', () => {
+            const checkboxes = document.querySelectorAll('#frm350 input[type="checkbox"]');
+            let isValid = false;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    isValid = true;
+                }
+            });
+
+            if (isValid) {
+                child.sendFormData('frm350');
+                showModal()
+                result.textContent = '제출되었어요.'
+                btn.disabled = true;
+            } else {
+                showModal()
+                result.textContent = '한 개 이상의 항목을 선택한 후 제출하기를 눌러 주세요.'
+            }
+        });
+
+        //다시제출 버튼
+        const btn1_1 = document.getElementById('btn1_1');
+        btn1_1.addEventListener('click', () => {
+            const checkboxes = document.querySelectorAll('#frm350 input[type="checkbox"]');
+            let isValid = false;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    isValid = true;
+                }
+            });
+
+            if (isValid) {
+                child.sendFormData('frm350');
+                showModal()
+                result.textContent = '제출되었어요.'
+                btn.disabled = true;
+            } else {
+                showModal()
+                result.textContent = '한 개 이상의 항목을 선택한 후 제출하기를 눌러 주세요.'
+            }
+        });
+
+        //모달 띄우기
+        const result = document.getElementById('result');
+        const showModal = () => {
+            const modal = document.getElementById("modal");
+            modal.classList.remove("hide");
+        };
+        //모달 닫기
+        document.querySelector(".close").addEventListener("click", function () {
+            const modal = document.getElementById("modal");
+            modal.classList.add("hide");
+        });
+        // 모달 외부 클릭해도 모달 닫기
+        window.addEventListener('click', function (event) {
+            const modal = document.getElementById("modal");
+            if (event.target === modal) {
+                modal.classList.add("hide");
+            }
+        });
+    </script>
+</body>
+
+</html>

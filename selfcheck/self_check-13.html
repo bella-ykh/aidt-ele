@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="씨마스" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>13-스스로 평가</title>
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/self_check.css">
+    <script type="text/javascript" src="js/GoogleTranslate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
+    <script src="https://acv001.aiktbook.com/api/static/message-channel-iframe.js"></script>
+</head>
+
+<body>
+    <div id="finish4" class="container finish">
+        <form id="frm352" onsubmit="return false">
+
+            <div class="box_container">
+                <header>
+                    <div class="title">
+                        <h1>이번 단원에서 배운 내용을 스스로 평가해 볼까요?</h1>
+                        <input type="hidden" name="aidt_pageTitle" value="이번 단원에서 학습한 내용을 생각하며 학습 목표를 정리해요.">
+                    </div>
+                    <div class="tit_choice">
+                        <p>해당되는 항목을 <img src="./img/choice.png" alt="손모양 마우스커서">선택해 주세요.</p>
+                        <div class="tit_icon">
+                            <div>
+                                <img class="icon check_bg4" src="./img/good.png" alt="보통">
+                                <span class="icon_txt">보통</span>
+                            </div>
+                            <div>
+                                <img class="icon check_bg4" src="./img/great.png" alt="잘함">
+                                <span class="icon_txt">잘함</span>
+                            </div>
+                            <div>
+                                <img class="icon check_bg4" src="./img/excellent.png" alt="매우 잘함">
+                                <span class="icon_txt">매우 잘함</span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="form_box">
+                    <div class="box2">
+                        <div class="box_wrap">
+                            <div class="check_title">
+                                <div class="title_ico"></div>
+                                <span>지식·이해</span>
+                                <h3>인공지능이 무엇인지 알고, 생활 속에서 인공지능을 발견할 수 있다.</h3>
+                            </div>
+
+                                <div class="radio-group">
+                                    <input type="hidden" name="aidt_examId" value="1">
+                                    <input type="hidden" name="aidt_exam" value="인공지능이 무엇인지 알고, 생활 속에서 인공지능을 발견할 수 있다.">
+                                    <input type="hidden" name="aidt_answer" value="">
+                                    <input type="hidden" name="aidt_mcqYn" value="N">
+                                    <input type="hidden" name="aidt_type" value="radio">
+                                    <label class="radio-label">
+                                        <input type="radio" name="aidt_input1" data-group-id="1" value="보통">
+                                        <img src="./img/good.png" alt="보통">
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="aidt_input1" data-group-id="1" value="잘함">
+                                        <img src="./img/great.png" alt="잘함">
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="aidt_input1" data-group-id="1" value="매우 잘함">
+                                        <img src="./img/excellent.png" alt="매우 잘함">
+                                    </label>
+                                </div>
+
+                        </div>
+
+                        <div class="box_wrap">
+                            <div class="check_title">
+                                <div class="title_ico"></div>
+                                <span>가치·태도</span>
+                                <h3>다양한 인공지능을 올바른 태도로 활용하여 내 생활이 어떻게 편해졌는지 설명할 수 있다.</h3>
+                            </div>
+                                <div class="radio-group">
+                                    <input type="hidden" name="aidt_examId" value="2">
+                                    <input type="hidden" name="aidt_exam" value="다양한 인공지능을 올바른 태도로 활용하여 내 생활이 어떻게 편해졌는지 설명할 수 있다.">
+                                    <input type="hidden" name="aidt_answer" value="">
+                                    <input type="hidden" name="aidt_mcqYn" value="N">
+                                    <input type="hidden" name="aidt_type" value="radio">
+                                    <label class="radio-label">
+                                        <input type="radio" name="aidt_input2" data-group-id="2" value="보통">
+                                        <img src="./img/good.png" alt="보통">
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="aidt_input2" data-group-id="2" value="잘함">
+                                        <img src="./img/great.png" alt="잘함">
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="aidt_input2" data-group-id="2" value="매우 잘함">
+                                        <img src="./img/excellent.png" alt="매우 잘함">
+                                    </label>
+                                </div>
+
+                        </div>
+                        <div class="btn_box">
+                            <button id="btn1" type="submit" class="submit-button">제출하기</button>
+                            <button id="btn1_1" type="submit" class="submit-button" style="display: none">다시 제출하기</button>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="modal" class="modal hide">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const child = new ClientAPI();
+
+        //제출 여부 받아서 버튼 제어
+        child.receiveMessage((data)=>{
+            if(data.submitYn === 'Y'){
+                document.getElementById('btn1_1').style.display = ""; //다시제출 버튼 표시
+                document.getElementById('btn1').style.display = "none"; //제출 버튼 숨기기
+            }
+        });
+
+        //제출 버튼
+        const btn1 = document.getElementById('btn1'); 
+        btn1.addEventListener('click', () => {
+            const inputNames = ['aidt_input1', 'aidt_input2'];
+            let isEmpty = true;
+
+            inputNames.forEach(name => {
+                const inputs = document.getElementsByName(name);
+                inputs.forEach(input => {
+                    if ((input.type === 'checkbox' || input.type === 'radio') && input.checked) {
+                        isEmpty = false;
+                    } 
+                });
+            });
+            if (isEmpty) {
+                showModal()
+                result.textContent = '한 개 이상의 항목을 선택한 후 제출하기를 눌러 주세요.'
+            } else {
+                child.sendFormData('frm352');
+                showModal()
+                result.textContent = '제출되었어요.'
+                btn1.disabled = true;
+            }
+        });
+
+        //다시제출 버튼
+        const btn1_1 = document.getElementById('btn1_1'); 
+
+        btn1_1.addEventListener('click', () => {
+            const inputNames = ['aidt_input1', 'aidt_input2'];
+            let isEmpty = true;
+
+            inputNames.forEach(name => {
+                const inputs = document.getElementsByName(name);
+                inputs.forEach(input => {
+                    if ((input.type === 'checkbox' || input.type === 'radio') && input.checked) {
+                        isEmpty = false;
+                    } 
+                });
+            });
+            if (isEmpty) {
+                showModal()
+                result.textContent = '한 개 이상의 항목을 선택한 후 제출하기를 눌러 주세요.'
+            } else {
+                child.sendFormData('frm352');
+                showModal()
+                result.textContent = '다시 제출되었어요.'
+                btn.disabled = true;
+            }
+        });
+
+        //모달 띄우기
+        const result = document.getElementById('result');
+        const showModal = () => {
+            const modal = document.getElementById("modal");
+            modal.classList.remove("hide");
+        };
+        //모달 닫기
+        document.querySelector(".close").addEventListener("click", function () {
+            const modal = document.getElementById("modal");
+            modal.classList.add("hide");
+        });
+        // 모달 외부 클릭해도 모달 닫기
+        window.addEventListener('click', function (event) {
+            const modal = document.getElementById("modal");
+            if (event.target === modal) {
+                modal.classList.add("hide");
+            }
+        });
+    </script>
+</body>
+
+</html>
