@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDT 초등 소개페이지</title>
+    <link rel="stylesheet" href="css/aidt_introduce.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+</head>
+<body>
+    <div class="wrap_bg1">
+        <div class="top_bg1">
+            <div class="top_title1">호기심 가득한 신나는 정보 여행</div>
+            <div class="top_title2"><strong>씨마스 x 로지브라더스</strong> 초등 정보 AI 디지털교과서</div>
+
+            <div class="tabs">
+              <button class="tab-menu active" data-target="teacher">선생님 체험하기</button>
+              <button class="tab-menu" data-target="student">학생 체험하기</button>
+            </div>
+
+            <div class="tab_intit">소개 영상</div>
+
+            <div class="tab-content active" id="teacher">
+              <h2>선생님 체험하기</h2>
+              <p>이곳에서는 선생님 체험 콘텐츠를 확인할 수 있습니다.</p>
+            </div>
+            <div class="tab-content" id="student">
+              <h2>학생 체험하기</h2>
+              <p>이곳에서는 학생 체험 콘텐츠를 확인할 수 있습니다.</p>
+            </div>
+          
+            <script>
+              const tabMenus = document.querySelectorAll('.tab-menu');
+              const tabContents = document.querySelectorAll('.tab-content');
+          
+              tabMenus.forEach(tab => {
+                tab.addEventListener('click', () => {
+                  // 모든 탭 메뉴와 콘텐츠 초기화
+                  tabMenus.forEach(menu => menu.classList.remove('active'));
+                  tabContents.forEach(content => content.classList.remove('active'));
+          
+                  // 선택한 탭 메뉴와 해당 콘텐츠 활성화
+                  tab.classList.add('active');
+                  const target = tab.getAttribute('data-target');
+                  document.getElementById(target).classList.add('active');
+                });
+              });
+            </script>
+        </div>
+      
+    </div>
+
+    <div class="wrap_bg2">
+      <div class="top_bg2">
+        <p class="title_txt36">정보 과목의 핵심 개념도 쉽고 재미있게! <br>학습 효과 200% 올려 주는 씨마스 AI 디지털교과서!</p>
+        <p class="title_txt24">씨마스 AI 디지털 교과서는 학생들에게 쉽고 재미있게 학습할 수 있는 맞춤형 콘텐츠를,<br>선생님에게는 수업 효율을 높이는 실시간 피드백과 학습 데이터 분석을 제공합니다.</p>
+
+        <div class="info_wrap">
+          <dl class="info_photo">
+            <dt><img src="img/photo_01.png" alt="초등학생 눈높이에 맞는 콘텐츠 화면"></dt>
+            <dd>
+              <strong>초등학생 눈높이에 쏙쏙!</strong>
+              학생들 눈높이에 맞춘 재미있는 스토리텔링형<br>콘텐츠로 학습할 수 있습니다.
+            </dd>
+          </dl>
+          <dl class="info_photo">
+            <dt><img src="img/photo_02.png" alt="척척 완성하는 블록 코딩 화면"></dt>
+            <dd>
+              <strong>척척 완성하는 블록 코딩!</strong>
+              학생들이 자기주도적으로 완성하며 <br>학습할 수 있는 실습형 콘텐츠를 제공합니다.
+            </dd>
+          </dl>
+          <dl class="info_photo">
+            <dt><img src="img/photo_03.png" alt="친근한 캐릭터 화면"></dt>
+            <dd>
+              <strong>친근한 캐릭터 친구와 함께!</strong>
+              캐릭터 친구와 함께 상호작용하며 정보 과목의<br>핵심 내용들을 학습할 수 있습니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap_bg3">
+      <div class="unit_wrap">
+        <p class="title_txt36">정보 AI 디지털 교과서를<br>한눈에 확인해 보세요!</p>
+        <p class="title_txt24">재미있고 알찬 정보 교과 콘텐츠, 5개 단원 총 17차시로 구성되었습니다.</p>
+
+        <div class="unit_1">
+          <div class="unit_title">
+            <img src="img/unit_1.png" alt="Ⅰ.">컴퓨팅 시스템
+          </div>
+          <p class="title_txt24">실제 화면과 유사한 시뮬레이션 환경에서 다양한 정보 기기의 사용법을 체험하면서 익힙니다.</p>
+          <div class="unit_cont">
+            <div class="unit_img">
+              <img src="img/unit_img_01.png" alt="컴퓨팅 시스템 컨텐츠 화면">
+            </div>
+            <div class="unit_text">
+              <dl>
+                <dt><span>◆</span>정보 기기 사용하기</dt>
+                <dd><span>-</span> 1차시 : 정보기기 알아보기</dd>
+              </dl>
+              <dl>
+                <dt><span>◆</span>운영체제 기능 탐색하기</dt>
+                <dd><span>-</span> 2차시 : 운영체제 알아보기</dd>
+                <dd><span>-</span> 3차시 : 운영체제 활용하기</dd>
+                <dd><span>-</span> 4차시 : 응용 프로그램으로 정보 검색하기</dd>
+              </dl>
+              <dl>
+                <dt><span>◆</span>응용프로그램 활용하기</dt>
+                <dd><span>-</span> 5차시 : 정보 검색으로 문제 해결하기</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="unit_2">
+          <div class="unit_title">
+            <img src="img/unit_2.png" alt="Ⅱ.">데이터
+          </div>
+          <p class="title_txt24 title_m">이야기를 통한 문제 해결 과정에서 여러 가지 데이터를 수집 · 분석하며 데이터를 활용하는 역량을 키웁니다.</p>
+          <div class="unit_cont">
+            <div class="unit_img">
+              <img src="img/unit_img_02.png" alt="데이터 컨텐츠 화면">
+            </div>
+            <div class="unit_text">
+              <dl>
+                <dt><span>◆</span>데이터 체험하기</dt>
+                <dd><span>-</span> 6차시 : 데이터의 유형 알아보기</dd>
+                <dd><span>-</span> 7차시 : 여러 가지 데이터로 학교 소개하기</dd>
+              </dl>
+              <dl>
+                <dt><span>◆</span>데이터 수집 분석하기</dt>
+                <dd><span>-</span> 8차시 : 데이터 수집하기</dd>
+                <dd><span>-</span> 9차시 : 데이터 분석하기</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="unit_3">
+          <div class="unit_title">
+            <img src="img/unit_3.png" alt="Ⅲ.">알고리즘과 프로그래밍
+          </div>
+          <p class="title_txt24">블록 코딩을 통해 주어진 미션을 해결하며 프로그래밍의 원리를 쉽고 재미있게 배웁니다.</p>
+          <div class="unit_cont">
+            <div class="unit_img">
+              <img src="img/unit_img_03.png" alt="알고리즘과 프로그래밍 컨텐츠 화면">
+            </div>
+            <div class="unit_text">
+              <dl>
+                <dt><span>◆</span>프로그래밍 체험하기</dt>
+                <dd><span>-</span> 10차시 : 프로그래밍 시작하기</dd>
+                <dd><span>-</span> 11차시 : 복잡한 프로그램 만들기</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="unit_4">
+          <div class="unit_title">
+            <img src="img/unit_4.png" alt="Ⅳ.">인공지능
+          </div>
+          <p class="title_txt24 title_m">AR 카메라, 생성형 AI 등 최신 인공지능 기술을 직접 경험하며 인공지능의 개념과 활용 사례를 배웁니다.</p>
+          <div class="unit_cont">
+            <div class="unit_img">
+              <img src="img/unit_img_04.png" alt="인공지능 컨텐츠 화면">
+            </div>
+            <div class="unit_text">
+              <dl>
+                <dt><span>◆</span>인공지능 체험하기</dt>
+                <dd><span>-</span> 12차시 : 인공지능 알아보기</dd>
+                <dd><span>-</span> 13차시 : 인공지능 기술 체험하기</dd>
+              </dl>
+              <dl>
+                <dt><span>◆</span>인공지능 활용하기</dt>
+                <dd><span>-</span> 14차시 : 다양한 인공지능 서비스 활용하기</dd>
+                <dd><span>-</span> 15차시 : 생성형 인공지능으로 문제 해결하기</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="unit_5">
+          <div class="unit_title">
+            <img src="img/unit_5.png" alt="Ⅴ.">디지털 문화
+          </div>
+          <p class="title_txt24 title_m">온라인 수업, SNS 활동 등 디지털을 사용하는 여러 가지 상황에서의 인터랙티브 활동으로 디지털 예절과 개인 정보 보호 방법을 익힙니다.</p>
+          <div class="unit_cont">
+            <div class="unit_img">
+              <img src="img/unit_img_05.png" alt="디지털 문화 컨텐츠 화면">
+            </div>
+            <div class="unit_text">
+              <dl>
+                <dt><span>◆</span>디지털 문화 실천하기</dt>
+                <dd><span>-</span> 16차시 : 디지털 사회에서 지켜야 할 예절 알아보기</dd>
+              </dl>
+              <dl>
+                <dt><span>◆</span>개인정보 보호하기</dt>
+                <dd><span>-</span> 17차시 : 개인 정보의 중요성 알아보기</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap_bg4">
+      <div class="cont_wrap">
+        <p class="title_txt36">씨마스 AI 디지털 교과서와 함께<br>신나는 정보 여행을 함께 떠나 볼까요?</p>
+        <p class="title_txt24">수업 전에는 학생들의 궁금증을 유도하고, 수업 중에는 실시간 피드백을 제공해 보세요!<br>느린 학습자, 빠른 학습자에 따른 스스로 복습할 수 있는 자료를 제공하여 학습 효과를 극대화합니다.</p>
+
+        <div class="menu_wrap">
+          <div class="menu-button">
+            <button class="menu-tab active" data-tab="pre">수업 전</button>
+            <button class="menu-tab" data-tab="progress">수업 전개</button>
+            <button class="menu-tab" data-tab="summary">학습 정리</button>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="content-panel active" id="pre">
+            <div class="class_cont">
+              <img src="img/class_01.png" alt="진단 평가 컨텐츠 화면">
+              <dl>
+                <dt>진단 평가</dt>
+                <dd>수업 전, 간단한 OX 퀴즈를 통해 학생들이<br>학습 주제에 대해 얼마나 알고 있는지 확인합니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_02.png" alt="수업 재구성 컨텐츠 화면">
+              <dl>
+                <dt>수업 재구성</dt>
+                <dd>진단 평가 결과와 학생들에게 필요한 학습 내용을 <br>바탕으로 교과서를 재구성합니다.</dd>
+              </dl>
+            </div>
+          </div>
+  
+          <div class="content-panel" id="progress">
+            <div class="class_title line_y">&nbsp;&nbsp;&nbsp;도입&nbsp;&nbsp;&nbsp;</div>
+            <div class="class_cont">
+              <img src="img/class_03.png" alt="학습 계획 컨텐츠 화면">
+              <dl>
+                <dt>학습 계획</dt>
+                <dd>학생들이 호기심을 가지고 이번 단원에서 <br>
+                  배우고 싶은 내용을 선택하도록 <br>
+                  질문 형태의 문제 상황을 제시하였습니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_04.png" alt="학습 목표 컨텐츠 화면">
+              <dl>
+                <dt>학습 목표</dt>
+                <dd>학생들이 이번 차시에서 배우게 될 내용을 <br>
+                  확인하며 학습 목표를 이해하게 합니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_05.png" alt="생각 톡톡 컨텐츠 화면">
+              <dl>
+                <dt>생각 톡톡</dt>
+                <dd>수업 주제와 관련된 내용을 스토리텔링 형식으로 <br>
+                  풀어 내며, 학생들이 학습 주제에 대해 <br>
+                  생각을 확장하도록 돕습니다.</dd>
+              </dl>
+            </div>
+
+            <div class="class_title line_b">&nbsp;&nbsp;&nbsp;전개&nbsp;&nbsp;&nbsp;</div>
+            <div class="class_cont">
+              <img src="img/class_06.png" alt="개념 쏙쏙 컨텐츠 화면">
+              <dl>
+                <dt>개념 쏙쏙</dt>
+                <dd>AI 로봇과 친근한 캐릭터가 등장해 <br>
+                  학생들이 꼭 알아야 할 핵심 개념을 <br>
+                  쉽고 재미있게 이해하도록 설명합니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_07.png" alt="체험 활동 컨텐츠 화면">
+              <dl>
+                <dt>체험 활동</dt>
+                <dd>수업 중 또는 수업 후에도 자기 주도적으로 <br>
+                  블록 코딩이나 터치와 같은 <br>
+                  활동형 콘텐츠를 통해 학습을 진행할 수 있습니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_08.png" alt="모둠 활동 컨텐츠 화면">
+              <dl>
+                <dt>모둠 활동</dt>
+                <dd>학생들은 교사와 함께 모둠 활동을 진행하고, <br>
+                  학생과 교사는 실시간으로 상호작용하며 <br>
+                  의견을 공유할 수 있습니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_09.png" alt="알쏭달쏭 문제 도전 컨텐츠 화면">
+              <dl>
+                <dt>알쏭달쏭 문제 도전</dt>
+                <dd>차시를 정리하는 평가 문제를 통해 학생들이 <br>
+                  학습 내용을 얼마나 이해했는지 확인합니다.</dd>
+              </dl>
+            </div>
+            <div class="level_img"><img src="img/class_10.png" alt="알쏭달쏭 문제 도전 컨텐츠 화면"></div>
+            <div class="level_img_t"><img src="img/class_10_t.png" alt="알쏭달쏭 문제 도전 컨텐츠 화면"></div>
+            <div class="level_img_m"><img src="img/class_10_m.png" alt="알쏭달쏭 문제 도전 컨텐츠 화면"></div>
+          </div>
+  
+          <div class="content-panel" id="summary">
+            <div class="class_title line_p">&nbsp;&nbsp;&nbsp;정리&nbsp;&nbsp;&nbsp;</div>
+            <div class="class_cont">
+              <img src="img/class_11.png" alt="학습 목표 점검하기 도전 컨텐츠 화면">
+              <dl>
+                <dt>학습 목표 점검하기</dt>
+                <dd>이번 단원에서 배운 내용의 핵심 질문을 제공하여 <br>
+                  학생 스스로 평가하고, 평가 결과는 실시간으로 <br>
+                  선생님에게 공유하여 도움을 받을 수 있습니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_12.png" alt="학습 계획 점검하기 컨텐츠 화면">
+              <dl>
+                <dt>학습 계획 점검하기</dt>
+                <dd>학생들은 이번 단원에서 배운 핵심 내용을 <br>
+                  재확인하며 단원의 학습 계획을 잘 이루었는지 <br>
+                  확인할 수 있습니다.</dd>
+              </dl>
+            </div>
+            <div class="class_cont">
+              <img src="img/class_13.png" alt="총괄 평가 컨텐츠 화면">
+              <dl>
+                <dt>총괄 평가</dt>
+                <dd>단원을 마무리하며 학생이 모든 단원 내용을 <br>
+                  잘 이해했는지 총괄 평가 문항을 풀어 보며 <br>
+                  확인할 수 있습니다.</dd>
+              </dl>
+            </div>
+          </div>
+  
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const menuButton = document.querySelector('.menu_wrap');
+              const menuTabs = document.querySelectorAll('.menu-tab');
+              const contentPanels = document.querySelectorAll('.content-panel');
+              const menuOffsetTop = menuButton.offsetTop;
+              const menuHeight = menuButton.offsetHeight;
+              const adjustedMenuHeight = menuHeight * 3; // 탭 메뉴 높이의 3배
+              const contentPositions = Array.from(contentPanels).map(panel => ({
+                id: panel.id,
+                top: panel.offsetTop - adjustedMenuHeight, // 탭 메뉴 높이의 3배로 조정
+                bottom: panel.offsetTop + panel.offsetHeight - adjustedMenuHeight
+              }));
+              const lastPanel = contentPositions[contentPositions.length - 1];
+          
+              // 스크롤 이벤트 처리
+              window.addEventListener('scroll', () => {
+                const scrollPosition = window.scrollY;
+          
+                // 메뉴 고정 처리
+                if (scrollPosition >= menuOffsetTop) {
+                  menuButton.classList.add('fixed');
+                } else {
+                  menuButton.classList.remove('fixed');
+                }
+          
+                // 각 콘텐츠와 버튼 활성화 연동
+                contentPositions.forEach((pos, index) => {
+                  if (scrollPosition >= pos.top && scrollPosition < pos.bottom) {
+                    menuTabs.forEach(btn => btn.classList.remove('active'));
+                    menuTabs[index].classList.add('active');
+                  }
+                });
+          
+                // '학습 정리' 섹션 끝나면 버튼 숨김
+                if (scrollPosition >= lastPanel.bottom) {
+                  menuButton.style.display = 'none';
+                } else {
+                  menuButton.style.display = 'block';
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap_bg5">
+      <div class="master_wrap">
+        <p class="title_txt36">총 12명의 전문가와 함께 만든<br>씨마스 초등 정보 AI디지털교과서!</p>
+        <div class="align_c">
+          <img src="img/master_img.png" alt="00차시 AI 디지털 교과서는 학생들의 창의력과 학습 효율을 극대화하며, 개인 맞춤형 학습 경험을 제공합니다." class="master_img_w">
+          <img src="img/master_img_m.png" alt="00차시 AI 디지털 교과서는 학생들의 창의력과 학습 효율을 극대화하며, 개인 맞춤형 학습 경험을 제공합니다." class="master_img_m">
+        </div>
+
+        <div class="name_wrap mg_b35">
+          <strong class="name_50">한선관</strong>
+          <span class="font_30">집필 대표</span>
+        </div>
+        <div class="align_c font_24 pd_20">(현) 경인교육대학교 교수<br>(현) 한국인공지능교육학회 회장</div>
+
+        <div class="master_group">
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">홍수빈</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">부평서초등학교</span>
+              <span class="name_bg">1차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">류미영</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">축현초등학교</span>
+              <span class="name_bg">10,17차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">조현선</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">용아초등학교</span>
+              <span class="name_bg">집필 관리</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">이상민</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">진천상산초등학교</span>
+              <span class="name_bg">2-3차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">이준기</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">외삼초등학교</span>
+              <span class="name_bg">2-3차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">김도용</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">석정초등학교</span>
+              <span class="name_bg">10-11차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">임새이</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">위례초등학교</span>
+              <span class="name_bg">12-13차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">김지혜</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">마천초등학교</span>
+              <span class="name_bg">6-7차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">김지현</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">신석초등학교</span>
+              <span class="name_bg">8-9차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">김태령</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">녹번초등학교</span>
+              <span class="name_bg">14-15차시</span>
+            </div>
+          </div>
+
+          <div class="name_box">
+            <div class="name_wrap">
+              <strong class="name_40">강주원</strong>
+              <span class="font_26">선생님</span>
+            </div>
+            <div class="name_wrap">
+              <span class="name_bg">이솔초등학교</span>
+              <span class="name_bg">16-17차시</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap_bg3">
+      <div class="cont_wrap pd_t60">
+        <p class="title_txt36">정보 교과 교과서의 노하우를 담은<br>씨마스의 AI 디지털교과서를 만나 보세요!</p>
+        <p class="title_txt24">교사의 편의와 학생의 성장을 위한 풍부한 콘텐츠를 제공합니다.</p>
+
+        <div class="book_wrap">
+          <dl>
+            <dt class="book_mid">중학교 정보 교과 <span>(2022 개정)</span></dt>
+            <dd class="size_m1"><img src="img/book_01.png" alt="중학교 정보 교과 도서"></dd>
+          </dl>
+          <dl>
+            <dt class="book_high">고등학교 정보 교과 <span>(2022 개정)</span></dt>
+            <dd class="size_m2"><img src="img/book_02.png" alt="고등학교 정보 교과 도서"></dd>
+          </dl>
+        </div>
+
+        <ul class="book_txt">
+          <li><span>◆</span>수업 계획을 간편하게 세울 수 있으며, 학생들의 학습 진도를 한눈에 파악할 수 있습니다.</li>
+          <li><span>◆</span>학생 개개인의 학습 스타일과 수준에 맞춘 맞춤형 학습 경로를 제공합니다.</li>
+          <li><span>◆</span>학생들이 자율적으로 학습할 수 있는 환경을 제공합니다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap_bg4">
+      <div class="cont_wrap">
+        <p class="title_txt24_1">씨마스 정보 AIDT 채택 한정 혜택</p>
+        <p class="title_txt36">초등 SW 1등 코스모드 특별 할인 제공!</p>
+        
+        <div class="sw_wrap">
+          <img src="img/sw_img_01.png" alt="폭넓은 SW/AI 교육 콘텐츠 화면">
+          <ul>
+            <li>
+              <span>200+ 학교, 4만 명 학생이 검증한</span>폭넓은 SW/AI 교육 콘텐츠
+            </li>
+            <li>
+              <span>쉽고 간편한</span>원클릭 수업 준비 및 학습 관리
+            </li>
+            <li>
+              <span>현장 맞춤</span>교육 및 사용성 연수 제공
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap_bg1">
+      <div class="aidt_guide">
+        <p class="guide_txt"><span>초등 AI 디지털 교과서</span>활용해 보세요!</p>
+
+        <div class="tabs_2">
+          <button class="tab-menu" data-target="teacher">활용 가이드 보기</button>
+          <button class="tab-menu" data-target="student">사용 메뉴얼 보기</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs_wrap">
+      <dl>
+        <dt>교과 내용 문의</dt>
+        <dd>000-123-5678<br>cmass@cmass21.co.kr</dd>
+      </dl>
+      <dl class="dot_line">
+        <dt>상담 문의</dt>
+        <dd>000-123-5678<br>cmass@cmass21.co.kr</dd>
+      </dl>
+    </div>
+
+</body> 
+</html>
