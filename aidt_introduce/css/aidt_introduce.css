@@ -38,7 +38,10 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 @font-face { font-family: 'WAGURITTF'; src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2'); font-weight: normal; font-style: normal; } 
 @font-face { font-family: 'ONE Mobile Title'; src: url('https://cdn.jsdelivr.net/gh/wooin21/web/fonts/onestore/ONE Mobile Title.woff') format('woff2'); font-weight: normal; font-style: normal; } 
 
-
+body {
+    margin-top: calc(var(--header-height, 60px)); /* 헤더 높이만큼 여백 추가 */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+}
 
 /* 네비게이션 스타일 */
 header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: #fff; border-bottom: solid 10px #ddd; } 
@@ -66,8 +69,8 @@ header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; backgroun
 .wrap_bg1 { width: 100%; background: linear-gradient(to bottom, #2871fa, #6617ce); padding-top: 100px; } 
 h1 { color: #fff; padding: 90px 0 40px; font-size: 50px; text-align: center; font-weight: 500; } 
 .top_bg1 { width: 1300px; margin: 0 auto; background: url('../img/top_bg1.png') no-repeat center 30px; min-height: 950px; } 
-.top_title1 { width: 764px; height: 106px; background: url('../img/top_title_01.png') no-repeat; margin: 0 auto 5vw; text-indent: -999px; font-size: 0; } 
-.top_title2 { width: 636px; height: 93px; background: url('../img/top_title_02.png') no-repeat; margin: 0 auto 5vw; text-indent: -999px; font-size: 0; } 
+.top_title1 { width: 764px; height: 106px; background: url('../img/top_title_01.png') no-repeat; margin: 0 auto 80px; text-indent: -999px; font-size: 0; } 
+.top_title2 { width: 636px; height: 93px; background: url('../img/top_title_02.png') no-repeat; margin: 0 auto 110px; text-indent: -999px; font-size: 0; } 
 
 /* 버튼 */
 .btns { height: 90px; display: flex; flex-direction: row; justify-content: center; gap: 52px; margin: 0 auto; } 
@@ -95,13 +98,13 @@ h1 { color: #fff; padding: 90px 0 40px; font-size: 50px; text-align: center; fon
 
 /******* 소개 *******/
 .wrap_bg2 { width: 100%; background: url('../img/top_bg2.png') repeat-x 0 0; } 
-.top_bg2 { width: 1300px; margin: 0 auto; padding-top: 4vw; } 
-h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-height: 73px; color: #222; text-align: center; padding-top: 2vw; padding-bottom: 2vw; } 
-#about h2 { padding-top: 3vw; padding-bottom: 5vw; } 
+.top_bg2 { width: 1300px; margin: 0 auto; padding-top: 50px; } 
+h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-height: 73px; color: #222; text-align: center; padding: 50px 0; } 
+#about h2 { padding: 70px 0 100px; } 
 
 .info_wrap { width: 100%; display: flex; flex-direction: row; justify-content: space-between; } 
 .info_photo dt { text-align: center; padding-bottom: 30px; } 
-.info_photo dt strong { display: block; font-family: 'WAGURITTF'; font-size: 38px; line-height: 40px; text-align: center; color: #671cce; padding-bottom: 20px; } 
+.info_photo dt strong { display: block; font-family: 'WAGURITTF'; font-size: 38px; line-height: 40px; text-align: center; color: #671cce; padding-bottom: 30px; } 
 .info_photo dd { width: 90%; margin: 0 auto; font-size: 30px; line-height: 40px; text-align: center; } 
 
 
@@ -225,6 +228,71 @@ h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-he
 
 /* 테블릿용 스타일 */
 @media (max-width: 1024px){
+    header  { width: 100vw; border-bottom: solid 5px #ddd; position: fixed;}
+    .global_nav { width: 100%; } 
+    .nav_menu { width: 100%; }
+    .nav_menu li { width: 20%; } 
+    .nav_menu a { font-size: 24px; padding: 15px 0; } 
+    .nav_menu .active a {  font-size: 30px; } 
+    .nav_menu .active::after { content: ''; height: 5px; } 
+    .btn_down { width: 20%; border-top-left-radius: 30px; border-top-right-radius: 30px; padding-top: 15px; } 
+    .btn_down .ico { background: url('../img/ico_download.png') no-repeat 6px 0; background-size: 30px auto; height: 30px; padding-left: 40px; } 
+    .btn_down a { font-size: 16px; line-height: 20px; letter-spacing: -1px;} 
+
+    h1 { font-size: 40px; padding: 55px 0 30px; }
+    .top_bg1 { width: 100vw; background-size: contain; }
+    .top_title1 { width: 70vw; background-size: 100% auto; } 
+    .top_title2 { width: 48vw; background-size: 100% auto; }
+
+
+    .top_bg2 { width: 100vw; background-size: contain; }
+    h2 { font-size: 35px; padding: 30px 0; }
+    .info_wrap { width: 100%; display: flex; flex-direction: column; justify-content: center; gap: 50px;} 
+    .info_photo dd { font-size: 24px;}
+
+    .wrap_bg1, .wrap_bg2, .wrap_bg3, .wrap_bg4, .wrap_bg5 { height: auto; padding-bottom: 80px;} 
+
+    .container { width: 100vw; }
+    .point { font-family: 'ONE Mobile Title'; font-size: 35px; font-weight: 400; line-height: 73px; color: #6525d1; } 
+
+    .tabs { width: 95vw; margin: 0 auto; padding-bottom: 30px; }
+    .tab { width: 22%; height: 58px; border-radius: 50px; font-size: 30px; padding-top: 10px; }
+    .tab-content { padding: 20px; }
+
+    .nav-button img { width: 50px; height: auto; }
+    .indicator { width: 15px; height: 15px; background-color: #ddd; border-radius: 50%; margin: 0 5px; transition: all 0.3s ease; } 
+    .indicator.current { width: 30px; background-color: #ffc323; border-radius: 30px; } 
+
+    .unit img { width: 70vw; }
+    .unit dd { font-size: 24px;}
+
+    .bottom-slider { width: 95vw; background-size: contain; } 
+    .ai_cont { padding-top: 50px; }
+    .ai_cont dt { font-size: 24px;}
+    .ai_cont dt span { font-size: 40px; text-shadow: -2px 0 #6036d8, 0 2px #6036d8, 2px 0 #6036d8, 0 -2px #6036d8; } 
+    .ai_cont dd img { width: 80%; } 
+
+    .content-box img { width: 90%; }
+
+    .unit dd strong { font-size: 50px;}
+
+    .dashboard { margin: 20px auto 40px; }
+    .dashboard dd strong { font-size: 50px; }
+    .dashboard dd { font-size: 24px; margin-top: 30px; }
+
+
+
+
+
+
+
+    .cs_wrap { width: 70vw; } 
+    .cs_wrap dl dt { font-size: 34px; padding-bottom: 20px; } 
+    .cs_wrap dl dd { font-size: 20px; line-height: 26px; } 
+ }
+
+/* 모바일용 스타일 */
+@media (max-width: 600px){
     header  { width: 100vw; border-bottom: solid 5px #ddd;}
     .global_nav { width: 100%; } 
     .nav_menu { width: 100%; }
@@ -255,17 +323,8 @@ h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-he
     .tab { width: 22%; height: 58px; border-radius: 50px; font-size: 30px; padding-top: 10px; }
     .tab-content { padding: 20px; }
 
-
-
-
-    .cs_wrap { width: 70vw; } 
-    .cs_wrap dl dt { font-size: 34px; padding-bottom: 20px; } 
-    .cs_wrap dl dd { font-size: 20px; line-height: 26px; } 
- }
-
-/* 모바일용 스타일 */
-@media (max-width: 600px){
- .top_bg1 { width: 95vw; height: 852px; background-size: 100% auto; padding-top: 46px; } 
+    .nav-button img { width: 50px; height: auto; }
+    .unit img { width: 70vw; }
  
  .cs_wrap { width: 80vw; flex-direction: column; padding-left: 50px; } 
  .cs_wrap dl { width: 100% } 
