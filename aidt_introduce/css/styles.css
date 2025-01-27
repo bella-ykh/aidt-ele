@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .btns {
+    margin-bottom: 20px;
+  }
+  
+  .btn_menu {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn_menu.active {
+    background-color: #ffc323;
+    color: #fff;
+  }
+  
+  .dropdown {
+    margin-top: 10px;
+  }
+  
+  .sub_menu {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .sub_menu:hover {
+    background-color: #ddd;
+  }
+  

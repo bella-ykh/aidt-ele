@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDT 초등 소개페이지</title>
+    <link rel="stylesheet" href="css/aidt_introduce.css">
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css"/>
+</head>
+<body>
+  <header>
+    <nav class="global_nav">
+        <ul class="nav_menu">
+            <li class="active"><a href="#home">홈</a></li>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#study">수업</a></li>
+            <li><a href="#ai">AI기능</a></li>
+            <li><a href="#dash">대시보드</a></li>
+        </ul>
+        <div class="btn_down">
+          <div class="ico"><a href="https://viewer.cmass.kr/html/files/수업시나리오(씨마스_로지브라더스).pdf" download>수업 시나리오<br>다운로드</a></div>
+        </div>
+    </nav>
+  </header>
+  <!-- 홈 -->
+  <div class="wrap_bg1" id="home">
+    <div class="top_bg1">
+      <h1> AI 디지털교과서</h1>
+      <div class="top_title1">신나는 정보 여행</div>
+      <div class="top_title2">씨마스 x 로지브라더스</div>
+      <div class="btns">
+        <div>
+          <button class="btn_menu active" data-target="teacher" onclick="toggleMenu('teacherDropdown')">선생님 체험하기</button>
+          <!-- 선생님 체험하기 드롭다운 -->
+          <div id="teacherDropdown" class="dropdown">
+            <a class="btn_menu" href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=300333dc-a4d7-7edc-8e53-25a982193b8b" target="_blank" onclick="setStudentOptions('teacher1')">선생님 1</a>
+            <a class="btn_menu" href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=36bf78af-b10e-82ff-d9c1-686d8a6b688a" target="_blank" onclick="setStudentOptions('teacher2')">선생님 2</a>
+            <a class="btn_menu" href="https://example.com/teacher3" target="_blank" onclick="setStudentOptions('teacher3')">선생님 3</a>
+            <a class="btn_menu" href="https://example.com/teacher4" target="_blank" onclick="setStudentOptions('teacher4')">선생님 4</a>
+          </div>
+        </div>
+        <div>
+          <button class="btn_menu" data-target="student" onclick="toggleMenu('studentDropdown')">학생 체험하기</button>
+          <!-- 학생 체험하기 드롭다운 -->
+          <div id="studentDropdown" class="dropdown">
+            <!-- 학생 드롭다운 메뉴는 JavaScript로 동적으로 추가됨 -->
+          </div>
+        </div>        
+      </div>
+
+      <script>
+        // 메뉴 열기/닫기
+        function toggleMenu(id) {
+          const menu = document.getElementById(id);
+          if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+          } else {
+            menu.style.display = 'block';
+          }
+        }
+    
+        // 학생 체험하기 메뉴 동적 생성
+        function setStudentOptions(teacher) {
+          const studentDropdown = document.getElementById('studentDropdown');
+          studentDropdown.innerHTML = ''; // 기존 메뉴 초기화
+    
+          const studentOptions = {
+            teacher1: ['학생 1-1', '학생 1-2', '학생 1-3'],
+            teacher2: ['학생 2-1', '학생 2-2', '학생 2-3'],
+            teacher3: ['학생 3-1', '학생 3-2', '학생 3-3'],
+            teacher4: ['학생 4-1', '학생 4-2', '학생 4-3']
+          };
+    
+          const urls = {
+            '학생 1-1': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=23a0d5d7-eb9d-a7bd-5848-ae45605affa5',
+            '학생 1-2': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=5877ec22-2a2e-4cda-732d-38b8dd24d4c4',
+            '학생 1-3': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=eaa89c88-2f34-270d-6136-07086aad25ed',
+            '학생 2-1': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=40b10e9e-1f98-7a6b-9e84-ce9aaf68f776',
+            '학생 2-2': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=56b41649-97af-71c9-d49d-5d159bafee8b',
+            '학생 2-3': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=07e078f7-8cec-5093-97fa-bcb6671ef969',
+            '학생 3-1': 'https://example.com/student3-1',
+            '학생 3-2': 'https://example.com/student3-2',
+            '학생 3-3': 'https://example.com/student3-3',
+            '학생 4-1': 'https://example.com/student4-1',
+            '학생 4-2': 'https://example.com/student4-2',
+            '학생 4-3': 'https://example.com/student4-3'
+          };
+    
+          studentOptions[teacher].forEach(option => {
+            const link = document.createElement('a');
+            link.textContent = option;
+            link.href = urls[option];
+            link.target = '_blank';
+            studentDropdown.appendChild(link);
+          });
+    
+          studentDropdown.style.display = 'block'; // 메뉴 표시
+        }
+      </script>
+      
+    </div>
+    
+  </div>
+
+  <!-- 소개 -->
+  <div class="wrap_bg2" id="about">
+    <div class="top_bg2">
+      <h2>정보 과목의 핵심 개념과 활동을 쉽고 재미있게 학습하는<br>AI 디지털교과서!</h2>
+
+      <div class="info_wrap">
+        <dl class="info_photo">
+          <dt>
+            <strong>다양한 수업 모드 가능!</strong>
+            <img src="img/img_01.png" alt="초등학생 눈높이에 맞는 콘텐츠 화면">
+          </dt>
+          <dd>학생 스스로 주도적인 수업이 가능하고,인솔 기능으로 교사 주도적인 수업도 가능합니다. </dd>
+        </dl>
+        <dl class="info_photo">
+          <dt>
+            <strong>척척 완성하는 블록 코딩!</strong>
+            <img src="img/img_02.png" alt="척척 완성하는 블록 코딩 화면">
+          </dt>
+          <dd>학생들이 자기주도적으로 코딩 실습을 할 수 있도록 풍부한 블록 코딩 콘텐츠를 제공합니다. </dd>
+        </dl>
+        <dl class="info_photo">
+          <dt>
+            <strong>초등학생 눈높이에 쏙쏙!</strong>
+            <img src="img/img_03.png" alt="친근한 캐릭터 화면">
+          </dt>
+          <dd>학생들 눈높이에 맞춘 재미있는 스토리텔링형 콘텐츠로 학습할 수 있습니다.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!-- 수업 -->
+  <div class="wrap_bg3" id="study">
+    <div class="container">
+      <h2>
+        <span class="point">씨마스&로지브라더스</span>의 <span class="point">AI 디지털교과서</span>와 함께 <br>
+        신나는 정보 여행을 떠나 볼까요?
+      </h2>
+
+      <div class="tabs">
+        <div class="tab current" data-tab="tab1">수업 전</div>
+        <div class="tab" data-tab="tab2">도입</div>
+        <div class="tab" data-tab="tab3">전개</div>
+        <div class="tab" data-tab="tab4">마무리</div>
+      </div>
+
+      <div class="tab-contents">
+        <div id="tab1" class="tab-content current">
+            <dl class="unit">
+              <dt><img src="img/unit_01.png" alt="수업 재구성"></dt>
+              <dd>
+                <strong>수업 재구성</strong>
+                수업 시작 전, 교사가 수업을 자유롭게 재구성하여 수업을 준비할 수 있습니다.
+              </dd>
+            </dl>
+        </div>
+        <div id="tab2" class="tab-content">
+          <div class="slide-container">
+            <div class="slides">
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_02_1.png" alt="진단 평가"></dt>
+                  <dd>
+                    <strong>진단 평가</strong>
+                    수업 전, 간단한 OX 퀴즈를 통해 학생들이 학습 주제에 대해 얼마나 알고 있는지 확인합니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_02_2.png" alt="학습 계획"></dt>
+                  <dd>
+                    <strong>학습 계획</strong>
+                    이번 단원에서 배우고 싶은 내용을 학생이 직접 선택하도록 하여 자기 주도 학습 효과를 높였습니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_02_3.png" alt="학습 목표"></dt>
+                  <dd>
+                    <strong>학습 목표</strong>
+                    이번 시간에 배우게 될 내용을 확인하여 학습에 대한 호기심을 높이도록 구성하였습니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_02_4.png" alt="생각톡톡"></dt>
+                  <dd>
+                    <strong>생각톡톡</strong>
+                    학습 주제와 관련한 내용을 스토리텔링 형식으로 제시하여 학생들의 학습 동기 및 흥미를 유발하도록 구성하였습니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="navigation">
+              <button class="nav-button prev">
+                <img src="img/btn_prev.png" alt="이전">
+                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+              </button>
+              <button class="nav-button next">
+                <img src="img/btn_next.png" alt="다음">
+                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+              </button>
+            </div>
+          </div>
+          <div class="indicators">
+              <div class="indicator current"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+          </div>
+        </div>
+        <div id="tab3" class="tab-content">
+          <div class="slide-container">
+            <div class="slides">
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_03_1.png" alt="개념쏙쏙"></dt>
+                  <dd>
+                    <strong>개념쏙쏙</strong>
+                    캐릭터가 핵심 개념을 학생들이 이해하기 쉽고 재미있게 설명합니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_03_2.png" alt="활동해 보기"></dt>
+                  <dd>
+                    <strong>활동해 보기</strong>
+                    다양한 활동 콘텐츠를 통해 수업 중 또는 수업 후에도 학생이 자기 주도적으로 학습할 수 있도록 구성하였습니다. 
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_03_3.png" alt="모둠 활동"></dt>
+                  <dd>
+                    <strong>모둠 활동</strong>
+                    학생들은 교사와 함께 모둠 활동을 진행하고, 학생과 교사는 실시간으로 상호작용하며 의견을 공유할 수 있습니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_03_4.png" alt="알쏭달쏭 문제 도전"></dt>
+                  <dd>
+                    <strong>알쏭달쏭 문제 도전</strong>
+                    수업을 정리하는 평가 문제를 통해 학생들이 학습 내용을 얼마나 이해했는지 확인합니다. <br>평가 결과에 따라 맞춤형 콘텐츠가 제공됩니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="navigation">
+              <button class="nav-button prev">
+                <img src="img/btn_prev.png" alt="이전">
+                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+              </button>
+              <button class="nav-button next">
+                <img src="img/btn_next.png" alt="다음">
+                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+              </button>
+            </div>
+          </div>
+          <div class="indicators">
+              <div class="indicator current"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+          </div>
+        </div>
+        <div id="tab4" class="tab-content">
+          <div class="slide-container">
+            <div class="slides">
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_04_1.png" alt="배운 내용 스스로 점검하기"></dt>
+                  <dd>
+                    <strong>배운 내용 스스로 점검하기</strong>
+                    이번 단원에서 배운 내용을 학생 스스로 점검하고, 교사는 실시간으로 평가 결과를 확인하여 학생의 이해도를 확인할 수 있습니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_04_2.png" alt="배운 내용 확인하기"></dt>
+                  <dd>
+                    <strong>배운 내용 확인하기</strong>
+                    학생들은 이번 단원에서 배운 핵심 내용을 재확인하며 단원의 학습 계획을 잘 이루었는지 확인할 수 있습니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="slide">
+                <dl class="unit">
+                  <dt><img src="img/unit_04_3.png" alt="총괄 평가"></dt>
+                  <dd>
+                    <strong>총괄 평가</strong>
+                    대단원을 마무리하는 총괄 평가를 제시하여 학생들의 학습 이해도를 확인할 수 있습니다.
+                  </dd>
+                </dl>
+              </div> 
+            </div>
+            <div class="navigation">
+              <button class="nav-button prev">
+                <img src="img/btn_prev.png" alt="이전">
+                <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+              </button>
+              <button class="nav-button next">
+                <img src="img/btn_next.png" alt="다음">
+                <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+              </button>
+            </div>
+          </div>
+          <div class="indicators">
+              <div class="indicator current"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+              tabs.forEach(t => t.classList.remove('current'));
+              contents.forEach(c => c.classList.remove('current'));
+              tab.classList.add('current');
+              document.getElementById(tab.dataset.tab).classList.add('current');
+
+              const activeContent = document.getElementById(tab.dataset.tab);
+              const slides = activeContent.querySelector('.slides');
+              const indicators = activeContent.querySelectorAll('.indicator');
+              const prevButton = activeContent.querySelector('.prev');
+              const nextButton = activeContent.querySelector('.next');
+              let currentSlide = 0;
+
+              function updateSlide(index) {
+                  slides.style.transform = `translateX(-${index * 100}%)`;
+                  indicators.forEach((indicator, i) => {
+                      indicator.classList.toggle('current', i === index);
+                  });
+
+                  prevButton.disabled = index === 0;
+                  nextButton.disabled = index === indicators.length - 1;
+              }
+
+              prevButton.addEventListener('click', () => {
+                  if (currentSlide > 0) {
+                      currentSlide -= 1;
+                      updateSlide(currentSlide);
+                  }
+              });
+
+              nextButton.addEventListener('click', () => {
+                  if (currentSlide < indicators.length - 1) {
+                      currentSlide += 1;
+                      updateSlide(currentSlide);
+                  }
+              });
+
+              indicators.forEach((indicator, i) => {
+                  indicator.addEventListener('click', () => {
+                      currentSlide = i;
+                      updateSlide(currentSlide);
+                  });
+              });
+
+              updateSlide(currentSlide);
+          });
+        });
+    </script>
+  </div>
+
+  <!-- AI기능 -->
+  <div class="wrap_bg4" id="ai">
+    <div class="container">
+      <h2>
+        씨마스&로지브라더스<br>
+        <span class="point">AI 디지털교과서 AI 기능 살펴 보기</span>
+      </h2>
+    </div>
+    <div class="bg_full">
+      <div class="bottom-slider">
+        <div class="slide-container">
+          <div class="slides">
+            <div class="slide">
+              <dl class="ai_cont">
+                <dt>
+                  <span>AI 챗봇</span>
+                  학생이 학습을 수행하며 궁금한 사항이 발생할 경우 <br>AI 챗봇에 교과 내용을 질문하면 바로 답변을 받을 수 있습니다.
+                </dt>
+                <dd><img src="img/ai_01.png" alt="AI 챗봇"></dd>
+              </dl>
+            </div>
+            <div class="slide">
+              <dl class="ai_cont">
+                <dt>
+                  <span>AI 보조교사</span>
+                  학생들의 평가 및 활동 정보를 기반으로  학습 정보와 학습 설계에 대한 안내를 <br>수업 재구성 화면에서 제공합니다. 
+                </dt>
+                <dd><img src="img/ai_02.png" alt="AI 보조교사"></dd>
+              </dl>
+            </div>
+            <div class="slide">
+              <dl class="ai_cont">
+                <dt>
+                  <span>AI 맞춤형 콘텐츠(수업)</span>
+                  학생들이 학습 내용을 얼마나 이해했는지 수업을 정리하는 평가 문제를 통해 확인할 수 있습니다. <br>학생들의 이해수준에 따른 맞춤형 콘텐츠가 제공됩니다.
+                </dt>
+                <dd><img src="img/ai_03.png" alt="AI 맞춤형 콘텐츠(수업)"></dd>
+              </dl>
+            </div> 
+            <div class="slide">
+              <dl class="ai_cont">
+                <dt>
+                  <span>AI 맞춤형 콘텐츠(대시보드)</span>
+                  학생의 평가 및 활동 정보를 기반으로 학습의 강약점을 분석하고, 더 나은 학습을 위해 맞춤형 콘텐츠를 제공합니다.
+                </dt>
+                <dd><img src="img/ai_04.png" alt="AI 맞춤형 콘텐츠(대시보드)"></dd>
+              </dl>
+            </div> 
+          </div>
+          <div class="navigation">
+            <button class="nav-button prev">
+              <img src="img/btn_prev.png" alt="이전">
+              <img src="img/btn_prev_disabled.png" alt="이전" class="disabled">
+            </button>
+            <button class="nav-button next">
+              <img src="img/btn_next.png" alt="다음">
+              <img src="img/btn_next_disabled.png" alt="다음" class="disabled">
+            </button>
+          </div>
+        </div>
+        <div class="indicators">
+            <div class="indicator current"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+      </div>
+
+      <script>
+        const bottomSlides = document.querySelector('.bottom-slider .slides');
+        const bottomIndicators = document.querySelectorAll('.bottom-slider .indicator');
+        const bottomPrevButton = document.querySelector('.bottom-slider .prev');
+        const bottomNextButton = document.querySelector('.bottom-slider .next');
+        let bottomCurrentSlide = 0;
+
+        function updateBottomSlide(index) {
+            bottomSlides.style.transform = `translateX(-${index * 100}%)`;
+            bottomIndicators.forEach((indicator, i) => {
+                indicator.classList.toggle('current', i === index);
+            });
+
+            bottomPrevButton.disabled = index === 0;
+            bottomNextButton.disabled = index === bottomIndicators.length - 1;
+        }
+
+        bottomPrevButton.addEventListener('click', () => {
+            if (bottomCurrentSlide > 0) {
+                bottomCurrentSlide -= 1;
+                updateBottomSlide(bottomCurrentSlide);
+            }
+        });
+
+        bottomNextButton.addEventListener('click', () => {
+            if (bottomCurrentSlide < bottomIndicators.length - 1) {
+                bottomCurrentSlide += 1;
+                updateBottomSlide(bottomCurrentSlide);
+            }
+        });
+
+        bottomIndicators.forEach((indicator, i) => {
+            indicator.addEventListener('click', () => {
+                bottomCurrentSlide = i;
+                updateBottomSlide(bottomCurrentSlide);
+            });
+        });
+
+        updateBottomSlide(bottomCurrentSlide);
+    </script>
+    </div>
+  </div>
+
+  <!-- 대시보드 -->
+  <div class="wrap_scroll" id="dash">
+    <div class="container">
+      <div class="menu_wrap">
+        <div class="menu-button">
+          <button class="menu-tab active" data-tab="teacher">교사</button>
+          <button class="menu-tab" data-tab="student">학생</button>
+        </div>
+      </div>
+
+      <div class="content-box">
+        <div class="content-panel active" id="teacher">
+          <dl class="dashboard">
+            <dt><img src="img/dashboard_01.png" alt="대시보드"></dt>
+            <dd class="dot">
+              <strong>대시보드</strong>
+              최근 진행한 수업, 채점이 필요한 활동 및 평가, 학급 전체 학생의 단원별 학습 분석을 통해<br>
+              학생들이 어려워하는 개념을 파악하고 수업에 반영할 수 있습니다.  
+            </dd>
+          </dl>
+          <dl class="dashboard mg_t80">
+            <dt><img src="img/dashboard_02.png" alt="학습 분석"></dt>
+            <dd>
+              <strong>학습 분석</strong>
+              학생들의 평가 및 활동 정보를 기반으로 학급에 속한 학생 전체의 학습 분석 결과를 제공합니다. <br>
+              이 결과를 통해 교사는 학생의 강약점을 확인할 수 있고, 학생에게 맞춤형 콘텐츠를 제공할 수 있습니다. 
+            </dd>
+          </dl>
+        </div>
+
+        <div class="content-panel" id="student">
+          <dl class="dashboard">
+            <dt><img src="img/dashboard_03.png" alt="대시보드"></dt>
+            <dd class="dot">
+              <strong>대시보드</strong>
+              평가 및 활동 정보를 기반으로 학생 개인의 단원별 학습 분석 결과를 제공합니다. <br>
+              또한 학습한 단원에서의 강약점을 분석하여 오답 노트를 제공하고, <br>
+              이를 통해 부족한 부분을 보완할 수 있도록 도와줍니다.  
+            </dd>
+          </dl>
+          <dl class="dashboard mg_t80">
+            <dt><img src="img/dashboard_04.png" alt="학습 분석"></dt>
+            <dd>
+              <strong>학습 분석</strong>
+              학생이 수행한 평가 및 활동 정보에 대한 학습 분석 리포트를 제공합니다. <br>
+              학급 평균 점수와 내 점수를 비교하여 AI가 피드백을 제공하고, <br>
+              부족한 부분은 AI가 맞춤형 콘텐츠를 제공합니다. 
+            </dd>
+          </dl>
+        </div>
+
+        
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const tabs = document.querySelectorAll('.menu-tab');
+          const panels = document.querySelectorAll('.content-panel');
+          const menuWrap = document.querySelector('.menu_wrap');
+          const wrapScroll = document.querySelector('.wrap_scroll');
+
+          tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+              // 모든 탭 및 패널 초기화
+              tabs.forEach(t => t.classList.remove('active'));
+              panels.forEach(p => p.classList.remove('active'));
+
+              // 클릭된 탭 및 해당 패널 활성화
+              tab.classList.add('active');
+              document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+          });
+
+          window.addEventListener('scroll', () => {
+            const wrapBottom = wrapScroll.getBoundingClientRect().bottom;
+
+            if (wrapBottom <= 0) {
+              menuWrap.style.display = 'none';
+            } else {
+              menuWrap.style.display = 'flex';
+            }
+          });
+        });
+      </script>
+    </div>
+  </div>
+
+  <!-- 집필진 -->
+  <div class="wrap_yellow">
+    <div class="master_wrap">
+      <h2>총 12명의 전문가와 함께 만든 AI 디지털교과서!</h2>
+      <div class="align_c">
+        <img src="img/master_img.png" alt="씨마스와 로지브라더스의 AI 디지털교과서는 
+        학생들의 창의력과 학습 효율을 극대화하며,
+        개인 맞춤형 학습 경험을 제공합니다." class="master_img_w">
+        <img src="img/master_img_m.png" alt="00차시 AI 디지털 교과서는 학생들의 창의력과 학습 효율을 극대화하며, 개인 맞춤형 학습 경험을 제공합니다." class="master_img_m">
+      </div>
+
+      <div class="name_wrap mg_b35">
+        <strong class="name_50">한선관</strong>
+        <span class="font_30">집필 대표</span>
+      </div>
+      <div class="align_c font_24 pd_20">(현) 경인교육대학교 교수<br>(현) 한국인공지능교육학회 회장</div>
+
+      <div class="master_group">
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">홍수빈</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">부평서초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">류미영</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">축현초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">조현선</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">용아초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">이상민</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">진천상산초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">이준기</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">외삼초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">김도용</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">석정초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">임새이</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">위례초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">김지혜</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">마천초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">김지현</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">신석초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">김태령</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">녹번초등학교</span>
+          </div>
+        </div>
+
+        <div class="name_box">
+          <div class="name_wrap">
+            <strong class="name_40">강주원</strong>
+            <span class="font_26">선생님</span>
+          </div>
+          <div class="name_wrap">
+            <span class="name_bg">이솔초등학교</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- cs -->
+  <div class="cs_wrap">
+    <dl>
+      <dt>교과 내용 문의</dt>
+      <dd>02-2274-1590<br>dtbook@cmass21.co.kr</dd>
+    </dl>
+    <dl class="dot_line">
+      <dt>기술 상담 문의</dt>
+      <dd>02-2274-1591<br>dtbook@cmass21.co.kr</dd>
+    </dl>
+  </div>
+
+  <script src="js/script.js"></script>
+</body> 
+</html>

@@ -1,0 +1,80 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: solid 10px #ddd;
+}
+
+.global_nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_menu li {
+    width: 217px;
+    text-align: center;
+    position: relative;
+}
+
+.nav_menu a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #999;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+/* 선택된 메뉴 스타일 */
+.nav_menu .active a {
+    color: #000; /* 선택된 메뉴 텍스트 색상 */
+}
+
+.nav_menu .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #ffc323;
+    transition: all 0.3s ease;
+}
+
+/* 기본 Hover 스타일 */
+.nav_menu a:hover {
+    color: #000;
+}
+
+/* 각 섹션 스타일 */
+.wrap_bg1, .wrap_bg2, .wrap_bg3, .wrap_bg4, .wrap_bg5 {
+    height: 100vh; /* 각 섹션을 화면 전체 높이로 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    background-color: #f4f4f4;
+    margin-top: 60px; /* 네비게이션 높이만큼 여백 추가 */
+}
+.wrap_bg1 { background-color: #ffdddd; }
+.wrap_bg2 { background-color: #ddffdd; }
+.wrap_bg3 { background-color: #ddddff; }
+.wrap_bg4 { background-color: #ffffdd; }
+.wrap_bg5 { background-color: #ffddff; }
