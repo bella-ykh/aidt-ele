@@ -19,7 +19,7 @@
             <li><a href="#dash">대시보드</a></li>
         </ul>
         <div class="btn_down">
-          <div class="ico"><a href="files/초등 수업 운영 시나리오.pdf" target="_blank" download>수업 시나리오<br>다운로드</a></div>
+          <div class="ico"><a href="https://viewer.cmass.kr/html/files/수업시나리오(씨마스_로지브라더스).pdf" download>수업 시나리오<br>다운로드</a></div>
         </div>
     </nav>
   </header>
@@ -30,9 +30,75 @@
       <div class="top_title1">신나는 정보 여행</div>
       <div class="top_title2">씨마스 x 로지브라더스</div>
       <div class="btns">
-        <a href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=300333dc-a4d7-7edc-8e53-25a982193b8b" target="_blank"><button class="btn_menu active">선생님 체험하기</button></a>
-        <a href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=23a0d5d7-eb9d-a7bd-5848-ae45605affa5" target="_blank"><button class="btn_menu">학생 체험하기</button></a>
+        <div>
+          <button class="btn_menu active" data-target="teacher" onclick="toggleMenu('teacherDropdown')">선생님 체험하기</button>
+          <!-- 선생님 체험하기 드롭다운 -->
+          <div id="teacherDropdown" class="dropdown">
+            <a class="btn_menu" href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=300333dc-a4d7-7edc-8e53-25a982193b8b" target="_blank" onclick="setStudentOptions('teacher1')">선생님 1</a>
+            <a class="btn_menu" href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=36bf78af-b10e-82ff-d9c1-686d8a6b688a" target="_blank" onclick="setStudentOptions('teacher2')">선생님 2</a>
+            <a class="btn_menu" href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=45c69a4c-bb5c-cf7e-01b6-65f960a4d143" target="_blank" onclick="setStudentOptions('teacher3')">선생님 3</a>
+            <a class="btn_menu" href="https://lms001.aiktbook.com/login?isSimul=Y&uuid=f5535fa7-eecf-017d-261b-59474125803e" target="_blank" onclick="setStudentOptions('teacher4')">선생님 4</a>
+          </div>
+        </div>
+        <div>
+          <button class="btn_menu" data-target="student" onclick="toggleMenu('studentDropdown')">학생 체험하기</button>
+          <!-- 학생 체험하기 드롭다운 -->
+          <div id="studentDropdown" class="dropdown">
+            <!-- 학생 드롭다운 메뉴는 JavaScript로 동적으로 추가됨 -->
+          </div>
+        </div>        
       </div>
+
+      <script>
+        // 메뉴 열기/닫기
+        function toggleMenu(id) {
+          const menu = document.getElementById(id);
+          if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+          } else {
+            menu.style.display = 'block';
+          }
+        }
+    
+        // 학생 체험하기 메뉴 동적 생성
+        function setStudentOptions(teacher) {
+          const studentDropdown = document.getElementById('studentDropdown');
+          studentDropdown.innerHTML = ''; // 기존 메뉴 초기화
+    
+          const studentOptions = {
+            teacher1: ['학생 1-1', '학생 1-2', '학생 1-3'],
+            teacher2: ['학생 2-1', '학생 2-2', '학생 2-3'],
+            teacher3: ['학생 3-1', '학생 3-2', '학생 3-3'],
+            teacher4: ['학생 4-1', '학생 4-2', '학생 4-3']
+          };
+    
+          const urls = {
+            '학생 1-1': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=23a0d5d7-eb9d-a7bd-5848-ae45605affa5',
+            '학생 1-2': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=5877ec22-2a2e-4cda-732d-38b8dd24d4c4',
+            '학생 1-3': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=eaa89c88-2f34-270d-6136-07086aad25ed',
+            '학생 2-1': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=40b10e9e-1f98-7a6b-9e84-ce9aaf68f776',
+            '학생 2-2': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=56b41649-97af-71c9-d49d-5d159bafee8b',
+            '학생 2-3': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=07e078f7-8cec-5093-97fa-bcb6671ef969',
+            '학생 3-1': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=31a5c9a5-373d-796b-f48e-267e797c0c16',
+            '학생 3-2': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=532942e2-64d1-23af-6e4e-7991891a4320',
+            '학생 3-3': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=5d4bb83f-dbc1-6d7d-7381-55864cc6f3a8',
+            '학생 4-1': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=4b7471da-efcf-ddca-ae46-46b536650d57',
+            '학생 4-2': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=f012bd8f-710a-ac69-13d4-d7e7b7f74181',
+            '학생 4-3': 'https://lms001.aiktbook.com/login?isSimul=Y&uuid=9fae08f0-b69f-4803-da42-a5a0679155b7'
+          };
+    
+          studentOptions[teacher].forEach(option => {
+            const link = document.createElement('a');
+            link.textContent = option;
+            link.href = urls[option];
+            link.target = '_blank';
+            studentDropdown.appendChild(link);
+          });
+    
+          studentDropdown.style.display = 'block'; // 메뉴 표시
+        }
+      </script>
+      
     </div>
     
   </section>
@@ -48,11 +114,11 @@
             <strong>다양한 수업 모드 가능!</strong>
             <img src="img/img_01.png" alt="초등학생 눈높이에 맞는 콘텐츠 화면">
           </dt>
-          <dd>학생 스스로 학습이 가능하고, 인솔 기능으로 교사가 이끌어 가는 수업 진행도 가능합니다.</dd>
+          <dd>학생 스스로 주도적인 수업이 가능하고,인솔 기능으로 교사 주도적인 수업도 가능합니다. </dd>
         </dl>
         <dl class="info_photo">
           <dt>
-            <strong>블록 명령어로 문제 해결!</strong>
+            <strong>척척 완성하는 블록 코딩!</strong>
             <img src="img/img_02.png" alt="척척 완성하는 블록 코딩 화면">
           </dt>
           <dd>학생들이 자기주도적으로 코딩 실습을 할 수 있도록 풍부한 블록 코딩 콘텐츠를 제공합니다. </dd>
@@ -89,7 +155,7 @@
               <dt><img src="img/unit_01.png" alt="수업 재구성"></dt>
               <dd>
                 <strong>수업 재구성</strong>
-                수업 시작 전, 교사가 수업 자료를 자유롭게 재구성하여 수업을 준비할 수 있습니다.
+                수업 시작 전, 교사가 수업을 자유롭게 재구성하여 수업을 준비할 수 있습니다.
               </dd>
             </dl>
         </div>
@@ -331,7 +397,7 @@
               <dl class="ai_cont">
                 <dt>
                   <span>AI 챗봇</span>
-                  학생이 학습하는 중에 궁금한 사항이 있으면 AI 챗봇에게 질문하고 답변을 받을 수 있습니다.
+                  학생이 학습을 수행하며 궁금한 사항이 발생할 경우 <br>AI 챗봇에 교과 내용을 질문하면 바로 답변을 받을 수 있습니다.
                 </dt>
                 <dd><img src="img/ai_01.png" alt="AI 챗봇"></dd>
               </dl>
@@ -442,7 +508,8 @@
             <dt><img src="img/dashboard_01.png" alt="대시보드"></dt>
             <dd class="dot">
               <strong>대시보드</strong>
-              수업의 평가와 활동을 실시간 분석하여 대시보드 형태의 제공을 통해 <br>학생들이 어려워하는 부분을 신속히 파악하여 수업에 반영할 수 있습니다.
+              최근 진행한 수업, 채점이 필요한 활동 및 평가, 학급 전체 학생의 단원별 학습 분석을 통해<br>
+              학생들이 어려워하는 개념을 파악하고 수업에 반영할 수 있습니다.  
             </dd>
           </dl>
           <dl class="dashboard mg_t80">
