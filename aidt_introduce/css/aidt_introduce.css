@@ -66,7 +66,7 @@ header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; backgroun
 .wrap_bg1, .wrap_bg2, .wrap_bg3, .wrap_bg4, .wrap_bg5 { min-height: 100vh; /* 각 섹션을 화면 전체 높이로 설정 */ /*margin-top: 60px; */ /* 네비게이션 높이만큼 여백 추가 */ } 
 
 /******* 홈 *******/
-.wrap_bg1 { width: 100%; background: linear-gradient(to bottom, #2871fa, #6617ce); padding-top: 100px; } 
+.wrap_bg1 { width: 100%; background: url('../img/top_bg1_2.png') repeat-x 0 bottom; padding-top: 100px; } 
 h1 { color: #fff; padding: 150px 0 40px; font-size: 50px; text-align: center; font-weight: 500; } 
 .top_bg1 { width: 1300px; margin: 0 auto; background: url('../img/top_bg1.png') no-repeat center 30px; min-height: 950px; } 
 .top_title1 { width: 764px; height: 106px; background: url('../img/top_title_01.png') no-repeat; margin: 0 auto 80px; text-indent: -999px; font-size: 0; } 
@@ -96,7 +96,7 @@ h1 { color: #fff; padding: 150px 0 40px; font-size: 50px; text-align: center; fo
 
 
 /******* 소개 *******/
-.wrap_bg2 { width: 100%; background: url('../img/top_bg2.png') repeat-x 0 0; padding-bottom: 50px; } 
+.wrap_bg2 { width: 100%; background-color: #ffe362; padding-bottom: 50px; } 
 .top_bg2 { width: 1300px; margin: 0 auto; padding-top: 50px; } 
 h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-height: 73px; color: #222; text-align: center; padding: 50px 0; } 
 #about h2 { padding: 70px 0 100px; } 
