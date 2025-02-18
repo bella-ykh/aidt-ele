@@ -44,3 +44,5 @@ h1 { font-weight: 500; font-size: 22px; text-align: center; padding: 8px; margin
 
 .wrap { display: flex; justify-content: flex-start; gap: 20px; flex-direction: row;}
 .box { padding: 20px; background-color: #eee; border-radius: 10px; }
+.box2 { display: flex; flex-direction: row; gap: 20px; align-items: center; justify-content: flex-start; padding: 20px; background-color: #eee; border-radius: 10px; margin-bottom: 20px; font-weight: bold;}
+.pd_a20 { padding: 20px 30px; }
