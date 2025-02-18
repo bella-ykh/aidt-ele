@@ -67,7 +67,7 @@ header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; backgroun
 
 /******* 홈 *******/
 .wrap_bg1 { width: 100%; background: linear-gradient(to bottom, #2871fa, #6617ce); padding-top: 100px; } 
-h1 { color: #fff; padding: 90px 0 40px; font-size: 50px; text-align: center; font-weight: 500; } 
+h1 { color: #fff; padding: 150px 0 40px; font-size: 50px; text-align: center; font-weight: 500; } 
 .top_bg1 { width: 1300px; margin: 0 auto; background: url('../img/top_bg1.png') no-repeat center 30px; min-height: 950px; } 
 .top_title1 { width: 764px; height: 106px; background: url('../img/top_title_01.png') no-repeat; margin: 0 auto 80px; text-indent: -999px; font-size: 0; } 
 .top_title2 { width: 636px; height: 93px; background: url('../img/top_title_02.png') no-repeat; margin: 0 auto 110px; text-indent: -999px; font-size: 0; } 
