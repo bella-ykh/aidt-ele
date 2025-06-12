@@ -1,0 +1,119 @@
+@charset "UTF-8";/* Google Translate 상단 바 숨기기 */
+.skiptranslate {display: none !important; } 
+body {top: 0px !important; } 
+/*reset css*/
+* { font-family: "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; word-break: keep-all; } 
+
+html,body,div,p,span,strong,b,em,iframe,pre,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,fieldset,form,legend,label,table,caption,thead,tbody,tfoot,tr,th,td,ul,ol,li,a,input,select,textarea,figure { margin: 0; padding: 0; border: 0 none; } 
+
+input { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+
+body { font-family: "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; font-size: 18px; font-weight: 300; line-height: 1.7; color: #000; background: #fff; position: relative; overflow: hidden; align-items: center; letter-spacing: -0.2px; } 
+
+strong { font-weight: 500; } 
+
+ul,
+ol,
+li { list-style: none; } 
+em,
+address { font-style: normal; } 
+img { border: 0 none; font-size: 0; line-height: 0; } 
+sup { position: relative; top: 2px; font-size: 8px; line-height: 100%; } 
+
+/*테이블 만들 때 캡션 잊어버리지 말기..*/
+table { border-collapse: collapse; border-spacing: 0; } 
+caption { overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; } 
+th,
+td { vertical-align: middle; /* white-space: nowrap */ } 
+
+a { color: #333; text-decoration: none; line-height: 1; } 
+a:hover,
+a:focus,
+a:active { text-decoration: underline; } 
+a:visited { color: #333; } 
+*,
+html { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+*,
+*:before,
+*:after { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+
+button { border: none; appearance: none; -webkit-appearance: none; -moz-appearance: none; font-family: "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; cursor: pointer; margin: 0; } 
+
+select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; } 
+
+/*float시 clearfix*/
+.clearfix:after { clear: both; } 
+
+/*img width 100*/
+.img_w_100 img { width: 100%; } 
+
+.tsc { text-align: center; } 
+
+/*display*/
+.dpnone { display: none; } 
+.dpflex { display: flex; } 
+.dpinb { display: inline-block; } 
+.dpinline { display: inline; } 
+.dpblock { display: block; } 
+/* 모달 스타일 */
+.modal { /* 기본적으로 숨겨진 상태 */
+ position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5); /* 배경에 어둡게 */ } 
+
+/* 모달 내용 */
+.modal-content { background-color: #fefefe; margin: 25% auto; padding: 0 15px 26px; border: 2px solid #888; width: 80%; max-width: 382px; border-radius: 20px; } 
+#result { text-align: center; font-size: 1.5rem; font-weight: bold; } 
+/* 닫기 버튼 */
+.close { color: #aaa; font-size: 1.5rem; font-weight: bold; text-align: right; display: block; } 
+
+#modal-message { text-align: center; } 
+
+.close:hover,
+.close:focus { color: black; text-decoration: none; cursor: pointer; } 
+.hide { display: none; } 
+
+:root { --shadow: #C9C9C9; --sub: #FFE24D; --subshadow: #DFBD0E; --bg: #2A82C2; --bg2: #56A01B; --bg3: #1FA39B; --bg4: #C25C7A; --bg5: #7264AD; --iconBtn1: #E0F3FB; --iconBtn2: #E6FAD5; --iconBtn3: #E7F5F4; --iconBtn4: #FFF0F4; --iconBtn5: #EEE9FF; } 
+
+
+#intro1 { background: url('../img/intro1_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro2 { background: url('../img/intro2_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro3 { background: url('../img/intro3_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro4 { background: url('../img/intro4_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+#intro5 { background: url('../img/intro5_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
+
+.container { position: relative; width: 1280px; height: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 116px 165px; } 
+
+.intro h1 { font-size: 3rem; margin-left: -52px; } 
+
+.ico_see { position: absolute; left: 0; top: 0; z-index: 1; width: 230px; height: 270px; background: url('../img/char_see.gif') no-repeat; background-size: 50% auto; background-position: 58px 46px; } 
+
+
+.form_box,.form { display: flex; flex-direction: column; align-items: center; padding-top: 78px; } 
+.form_box,.form2 { display: flex; flex-direction: column; align-items: center; padding-top: 55px; } 
+
+.check4 .image-box { position: relative; width: 260px; height: 260px; border-radius: 20px; box-shadow: 0px 6px var(--shadow); background-size: 224px auto; background-position: 50% 20%; display: flex; flex-direction: column; justify-content: flex-end; background-repeat: no-repeat; background-color: #fff; cursor: pointer; } 
+
+.check3 .image-box { position: relative; width: 320px; height: 305px; border-radius: 20px; box-shadow: 0px 6px var(--shadow); background-size: 280px auto; background-position: 50% 20%; display: flex; flex-direction: column; justify-content: flex-end; background-repeat: no-repeat; background-color: #fff; cursor: pointer; } 
+
+.box_wrap:active .image-box { background-color: var(--shadow); transform: translate(0, 10px); box-shadow: none; } 
+
+.checkbox { position: absolute; top: 16px; right: 15px; width: 48px; height: 48px; display: none; } 
+
+input[type="checkbox"]:checked+.checkbox { display: block; } 
+
+.image-text { text-align: center; border-radius: 0 0 20px 20px; font-weight: 500; font-size: 1.4rem; padding-bottom: 20px;  } 
+
+.check_wrap { display: flex; justify-content: center; gap: 12px; } 
+
+.check3 { gap: 35px; } 
+
+.submit-button { margin-top: 92px; padding: 13px 73px; border-radius: 50px; font-size: 1.8rem; font-weight: bold; background: var(--sub); box-shadow: 0px 8px var(--subshadow); } 
+
+.submit-button:active { box-shadow: none; transform: translate(0, 10px); background: var(--subshadow); } 
+
+/* 학습계획 체크박스3개 */
+.check3_btn { margin-top: 70px; } 
+
+.btn_box { width: 100%; display: flex; justify-content: center; align-items: center;  }
