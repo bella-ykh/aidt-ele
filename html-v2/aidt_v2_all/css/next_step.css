@@ -1,0 +1,53 @@
+@charset "UTF-8"; /*reset css*/
+* { font-family: Pretendard, "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; word-break: keep-all; } 
+
+html,body,div,p,span,strong,b,em,iframe,pre,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,
+fieldset,form,legend,label,table,caption,thead,tbody,tfoot,tr,th,td,
+ul,ol,li,a,input,select,textarea,figure { margin: 0; padding: 0; border: 0 none; } 
+
+input { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+
+body { font-family: Pretendard, "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; font-size: 18px; font-weight: light; line-height: 33px; color: #212529; position: relative; overflow: hidden; align-items: center; } 
+
+strong { font-weight: 500; } 
+
+ul,ol,li { list-style: none; } 
+em,address { font-style: normal; } 
+img { border: 0 none; font-size: 0; line-height: 0; } 
+sup { position: relative; top: 2px; font-size: 8px; line-height: 100%; } 
+
+/*테이블 만들 때 캡션 잊어버리지 말기..*/
+table { border-collapse: collapse; border-spacing: 0; } 
+caption { overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; } 
+th,td { vertical-align: middle; /* white-space: nowrap */ } 
+
+a { color: #333; text-decoration: none; line-height: 1; } 
+a:hover,a:focus,a:active { text-decoration: underline; } 
+a:visited { color: #333; } 
+*,
+html { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+*,
+*:before,
+*:after { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; } 
+
+button { border: none; appearance: none; -webkit-appearance: none; -moz-appearance: none; font-family: "Pretendard", MalgunGothic, "맑은 고딕", "돋움", Dotum,
+ AppleGothic, Sans-serif, Arial; cursor: pointer; margin: 0; } 
+
+select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; } 
+
+
+/* Layout */
+.wrap { width: 1280px; height: 800px; margin: 0 auto; position: relative; z-index: 1;}
+
+/* 보충,심화 배경 */
+.step_bg {background: url('../img/step_bg.jpg') no-repeat; background-size: 100% 100%;}
+
+.title { width: 100%; text-align: center; padding-top: 16%; }
+.title h1 { font-size: 50px; letter-spacing: -1px; text-align: center; font-family: Pretendard,"Pretendard",sans-serif;}
+.title p {font-size: 31px; text-align: center; padding: 50px 0 60px;font-family: Pretendard,"Pretendard",sans-serif;}
+.title p strong { background-color: #49A600; color: #fff; border-radius: 8px; font-weight: 400; padding: 8px 10px; }
+
+.desc { width: 65%; margin: 0 auto; background-color: #EDEDED; border-radius: 14px; text-align: center; padding: 30px; font-size: 28px; line-height: 45px; color: #A6A6A6; font-family: Pretendard,"Pretendard",sans-serif;}
+.desc strong {font-style: normal; color: #49A600; font-weight: 600;}

@@ -38,11 +38,18 @@ h2 { font-weight: 500; font-size: 20px; text-align: center; padding: 5px; margin
 .list_link { width: max-content; margin: 0 auto; padding-bottom: 10px; }
 .list_link li { margin-bottom: 5px; border-bottom: dashed 1px #666; padding: 10px 5px; padding-bottom: 5px; line-height: 25px;}
 .list_link li a { font-size: 16px; color: #222;  }
-.list_link li a:hover {text-decoration: none; color: #811ba3; }
+.list_link li a:hover {text-decoration: none; color: #066aec; }
+.line_first { border-bottom: solid 2px #666 !important; font-weight: bold;}
 
 .wrap { display: flex; justify-content: flex-start; gap: 20px; flex-direction: row;}
-.box { padding: 20px; background-color: #eee; border-radius: 10px; }
+.box { padding: 15px 10px 2px; background-color: #eee; border-radius: 10px; }
 .box2 { display: flex; flex-direction: row; gap: 20px; align-items: center; justify-content: flex-start; padding: 20px; background-color: #eee; border-radius: 10px; margin-bottom: 20px; font-weight: bold;}
 .pd_a20 { padding: 20px 30px; }
 
-.title_txt { display: inline-block; width: 130px; padding-right: 10px; }
+.title_txt { display: inline-block; width: 110px; padding-right: 10px; }
+.w140 { width: 140px !important; }
+.box_row { display: flex; flex-direction: row}
+.group { border-bottom: solid 1px #b5b5b5 !important; border-right: solid 1px #b5b5b5 !important; border: solid 1px #b5b5b5; border-radius: 10px; padding-top: 5px !important; margin-top: 10px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); }
+.font_bold { font-weight: bold; }
+
+.mg_t0 { margin-top: 0 !important; }
