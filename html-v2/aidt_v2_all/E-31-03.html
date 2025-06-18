@@ -9,65 +9,68 @@
     <title>11-확인해 볼까요?</title>
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css" />
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/wrap_up.css">
+    <!-- 브라우저 번역(다국어 관련) -->
+	<link rel="stylesheet" href="css/GoogleTranslate.css">
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
     <script src="https://acv001.aiktbook.com/api/static/message-channel-iframe.js"></script>
 </head>
 
-<body>
-    <div id="intro3" class="container intro">
-        <h1>이번 단원에서 무엇을 배웠는지 확인해 볼까요?</h1>
-        <div class="ico_see"><!--보는 캐릭터--></div>
-
-        <form id="frm349" class="form" onsubmit="return false">
-            <input type="hidden" name="aidt_pageTitle" value="초3단원 정리 학습계획">
-            <input type="hidden" name="aidt_examId" value="1">
-            <input type="hidden" name="aidt_exam" value="이번 단원에서 무엇을 배웠는지 확인해 볼까요?">
-            <input type="hidden" name="aidt_answer" value="">
-            <input type="hidden" name="aidt_mcqYn" value="N">
-            <input type="hidden" name="aidt_type" value="checkbox">
-            <div class="check_wrap check4">
-                <div class="box_wrap">
-                    <label class="image-box" style="background-image: url('./img/plan3_1_01.png');">
-                        <input type="checkbox" name="aidt_input" data-group-id="1" value="컴퓨터와 프로그래머"
-                            style="display:none;">
-                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked1">
-                        <div class="image-text">컴퓨터와 프로그래머</div>
-                    </label>
+<body class="resize_bg">
+    <div class="wrap_resize">
+        <div id="intro3" class="container intro">
+            <h1>이번 단원에서 무엇을 배웠는지 확인해 볼까요?</h1>
+            <div class="ico_see"><!--보는 캐릭터--></div>
+    
+            <form id="frm349" class="form" onsubmit="return false">
+                <input type="hidden" name="aidt_pageTitle" value="초3단원 정리 학습계획">
+                <input type="hidden" name="aidt_examId" value="1">
+                <input type="hidden" name="aidt_exam" value="이번 단원에서 무엇을 배웠는지 확인해 볼까요?">
+                <input type="hidden" name="aidt_answer" value="">
+                <input type="hidden" name="aidt_mcqYn" value="N">
+                <input type="hidden" name="aidt_type" value="checkbox">
+                <div class="check_wrap check4">
+                    <div class="box_wrap">
+                        <label class="image-box" style="background-image: url('./img/plan3_1_01.png');">
+                            <input type="checkbox" name="aidt_input" data-group-id="1" value="컴퓨터와 프로그래머"
+                                style="display:none;">
+                            <img src="./img/checkBtn.png" class="checkbox" alt="Checked1">
+                            <div class="image-text">컴퓨터와 프로그래머</div>
+                        </label>
+                    </div>
+                    <div class="box_wrap">
+                        <label class="image-box" style="background-image: url('./img/plan3_1_02.png');">
+                            <input type="checkbox" name="aidt_input" data-group-id="1" value="순서" style="display:none;">
+                            <img src="./img/checkBtn.png" class="checkbox" alt="Checked2">
+                            <div class="image-text">순서</div>
+                        </label>
+                    </div>
+                    <div class="box_wrap">
+                        <label class="image-box" style="background-image: url('./img/plan3_1_03.png');">
+                            <input type="checkbox" name="aidt_input" data-group-id="1" value="프로그램" style="display:none;">
+                            <img src="./img/checkBtn.png" class="checkbox" alt="Checked3">
+                            <div class="image-text">프로그램</div>
+                        </label>
+                    </div>
+                    <div class="box_wrap">
+                        <label class="image-box" style="background-image: url('./img/plan3_1_04.png');">
+                            <input type="checkbox" name="aidt_input" data-group-id="1" value="프로그래밍" style="display:none;">
+                            <img src="./img/checkBtn.png" class="checkbox" alt="Checked4">
+                            <div class="image-text">프로그래밍</div>
+                        </label>
+                    </div>
                 </div>
-                <div class="box_wrap">
-                    <label class="image-box" style="background-image: url('./img/plan3_1_02.png');">
-                        <input type="checkbox" name="aidt_input" data-group-id="1" value="순서" style="display:none;">
-                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked2">
-                        <div class="image-text">순서</div>
-                    </label>
+                <div class="btn_box">
+                    <button id="btn1" type="submit" class="submit-button">제출하기</button>
+                    <button id="btn1_1" type="submit" class="submit-button" style="display: none">다시 제출하기</button>    
                 </div>
-                <div class="box_wrap">
-                    <label class="image-box" style="background-image: url('./img/plan3_1_03.png');">
-                        <input type="checkbox" name="aidt_input" data-group-id="1" value="프로그램" style="display:none;">
-                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked3">
-                        <div class="image-text">프로그램</div>
-                    </label>
+            </form>
+            <div id="modal" class="modal hide">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="result"></p>
                 </div>
-                <div class="box_wrap">
-                    <label class="image-box" style="background-image: url('./img/plan3_1_04.png');">
-                        <input type="checkbox" name="aidt_input" data-group-id="1" value="프로그래밍" style="display:none;">
-                        <img src="./img/checkBtn.png" class="checkbox" alt="Checked4">
-                        <div class="image-text">프로그래밍</div>
-                    </label>
-                </div>
-            </div>
-            <div class="btn_box">
-                <button id="btn1" type="submit" class="submit-button">제출하기</button>
-                <button id="btn1_1" type="submit" class="submit-button" style="display: none">다시 제출하기</button>    
-            </div>
-        </form>
-        <div id="modal" class="modal hide">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p id="result"></p>
             </div>
         </div>
     </div>
@@ -147,6 +150,10 @@
             }
         });
     </script>
+    <script>
+		const contentId = 'E-31-03';
+	</script>
+	<script type="text/javascript" src="./js/xapi.page.js"></script>
 </body>
 
 </html>

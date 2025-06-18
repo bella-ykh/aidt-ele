@@ -39,7 +39,9 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 
 
 /* Layout */
-.wrap { width: 1280px; height: 800px; margin: 0 auto; position: relative; z-index: 1;} 
+body.resize_bg { background-color: #F5F8F9;}
+.wrap_resize { width: 1600px; height: 900px; margin: 0 auto; }
+.wrap { width: 1440px; height: 900px; margin: 0 auto; position: relative; z-index: 1;} 
 
 .title_wrap {font-family: Pretendard,"Pretendard",sans-serif; height: 50px; display: flex; align-items: center; background-color: #fff; font-size: 18px; font-weight: 400; gap: 8px; line-height: 144.5%; padding-left: 80px; position: relative; z-index: 99;}
 .arrow { width: 1em; height: 1em; background: url('../img/arrow.svg') no-repeat; background-size: 100% 100%;}
@@ -47,7 +49,7 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 .title { font-weight: 700; font-family: Pretendard,"Pretendard",sans-serif; }
 
 
-.container { width: 100%; height: 750px; display: flex; align-items: center; position: relative; z-index: 1; } 
+.container { width: 100%; height: 850px; display: flex; align-items: center; position: relative; z-index: 1; } 
 .bg1 { background: url('../img/lesson_bg1.png') no-repeat; background-size: 100% 100%; } 
 .bg2 { background: url('../img/lesson_bg2.png') no-repeat; background-size: 100% 100%; } 
 .bg3 { background: url('../img/lesson_bg3.png') no-repeat; background-size: 100% 100%; } 
@@ -80,7 +82,7 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 .char_17 { width: 100%; height: 100%; background: url('../img/char17.gif') no-repeat; background-size: 25% auto; background-position: 5% 92%; position: absolute; z-index: 2;}
 
 .txt_wrap { margin-left: 38%; font-family: Pretendard,"Pretendard",sans-serif; }
-.txt_wrap span { display: block; font-size: 56px; font-weight: 700; padding-bottom: 64px; letter-spacing: -1.786px; font-family: Pretendard,"Pretendard",sans-serif;} 
-.txt_wrap ul li { font-size: 24px; color: #333; font-weight: 500; line-height: 52px; letter-spacing: -1.786px; font-family: Pretendard,"Pretendard",sans-serif;}
+.txt_wrap span { display: block; font-size: 60px; font-weight: 700; padding-bottom: 64px; letter-spacing: -1.786px; font-family: Pretendard,"Pretendard",sans-serif;} 
+.txt_wrap ul li { font-size: 26px; color: #333; font-weight: 500; line-height: 52px; letter-spacing: -1.786px; font-family: Pretendard,"Pretendard",sans-serif;}
 
 .txt_que { background: url('../img/q.svg') no-repeat; margin-top: 64px; font-size: 23px; padding-left: 45px; font-family: Pretendard,"Pretendard",sans-serif;}

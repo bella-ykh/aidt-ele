@@ -96,8 +96,11 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
     --check_bg5: #7264AD; 
 } 
 
+body.resize_bg { background-color: #F5F8F9;}
+.wrap_resize { width: 1600px; height: 900px; margin: 0 auto; }
+
 #finish_next { background: url('../img/finish1_plan_bg.jpg') no-repeat center center; background-size: 100% 100%; } 
-.container { position: relative; width: 1280px; height: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 116px 165px; } 
+.container { position: relative; width: 1440px; height: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 116px 165px; } 
 
 .intro h1 { font-size: 3rem; } 
 #finish_next h1 { font-size: 3rem; } 
@@ -117,13 +120,13 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 #finish5 { background: url('../img/obj_bg5.jpg') no-repeat center center; background-size: 100% 100%; } 
 header { display: flex; align-items: center; justify-content: space-between; margin-top: 32px; } 
 
-header .title { width: 744px; } 
+header .title { width: 915px; } 
 
 .box2 { width: 100%; } 
 
-.box_wrap { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 12px; } 
+.box_wrap { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 20px; } 
 
-.box_container { width: 1120px; height: 715px; box-shadow: 0px 2px 29px 3px var(--shadow); background-color: #fff; border-radius: 30px; padding: 30px 44px; } 
+.box_container { width: 1315px; height: 815px; box-shadow: 0px 2px 29px 3px var(--shadow); background-color: #fff; border-radius: 30px; padding: 30px 40px; } 
 
 .finish { padding: 42px 72px; } 
 
@@ -140,7 +143,7 @@ header .title { width: 744px; }
 #finish3 .title span { background: url('../img/obj_tit3.png') no-repeat; background-size: contain; } 
 #finish4 .title span { background: url('../img/obj_tit4.png') no-repeat; background-size: contain; } 
 #finish5 .title span { background: url('../img/obj_tit5.png') no-repeat; background-size: contain; } 
-.finish .tit_choice { width: 288px; border: 1px solid var(--bg); border-radius: 20px; text-align: center; padding: 5px; margin-top: -38px; } 
+.finish .tit_choice { width: 320px; border: 1px solid var(--bg); border-radius: 20px; text-align: center; padding: 5px; margin-top: -38px; } 
 
 #finish2 .tit_choice { border: 1px solid var(--bg2); } 
 #finish3 .tit_choice { border: 1px solid var(--bg3); } 
@@ -154,7 +157,7 @@ header .title { width: 744px; }
 
 .finish .tit_choice span { display: block; font-size: 0.8rem; } 
 
-.tit_icon { display: flex; align-items: center; justify-content: center; gap: 21px; padding-top: 8px; } 
+.tit_icon { display: flex; align-items: center; justify-content: center; gap: 27px; padding-top: 8px; } 
 
 .icon { width: 59px; height: 59px; color: gray; font-weight: 500; font-size: 1rem; border-radius: 50%; background-color: var(--check_bg1); } 
 .check_bg2 { background-color: var(--check_bg2); }
@@ -178,21 +181,21 @@ header .title { width: 744px; }
 .box3 .text1 span { margin-top: -3px; } 
 .box3 .desc_text h3 { text-align: left; font-size: 1.5rem; } 
 .desc_text h3 { display: flex; justify-content: left; line-height: 1.8rem; padding-top: 44px; padding-left: 24px; letter-spacing: -1px; font-size: 1.5rem;} 
-.radio-group { width: 288px; max-height: 101px; display: flex; justify-content: space-between; gap: 10px; border: 1px solid var(--bg); border-radius: 20px; padding: 14px; margin-top: 37px; } 
+.radio-group { width: 320px; height: 120px; display: flex; justify-content: center; align-items: center; gap: 25px; border: 1px solid var(--bg); border-radius: 20px; padding: 14px; margin-top: 37px; } 
 
 /* 질문 타이틀 아이콘 배경 */
-.check_title { position: relative; width: 735px; height: 101px; align-content: center; border: 1px solid var(--bg); border-radius: 20px; padding: 14px; margin-top: 37px; line-height: 20px;} 
+.check_title { position: relative; width: 900px; height: 120px; align-content: center; border: 1px solid var(--bg); border-radius: 20px; padding: 14px; margin-top: 37px; line-height: 20px;} 
 #finish2 .check_title { border: 1px solid var(--bg2); } 
 #finish3 .check_title { border: 1px solid var(--bg3); } 
 #finish4 .check_title { border: 1px solid var(--bg4); } 
 #finish5 .check_title { border: 1px solid var(--bg5); } 
 .check_title .title_ico { width: 60px; height: 60px; background: url('../img/on.png') no-repeat; background-size: auto 100%; position: absolute; left: 10px; top: -35px; z-index: 1; }
-.check_title span { display: inline-block; width: 130px; background-color: var(--bg); font-size: 1rem; font-weight: 500; color: #fff; border-bottom-right-radius: 30px; border-top-right-radius: 30px; padding: 8px 0 8px 40px; position: absolute; left: 30px; top: -20px;  }
+.check_title span { display: inline-block; width: 130px; background-color: var(--bg); font-size: 1.2rem; font-weight: 500; color: #fff; border-bottom-right-radius: 30px; border-top-right-radius: 30px; padding: 8px 0 8px 36px; position: absolute; left: 30px; top: -20px;  }
 #finish2 .check_title span { background-color: var(--bg2); }
 #finish3 .check_title span { background-color: var(--bg3); }
 #finish4 .check_title span { background-color: var(--bg4); }
 #finish5 .check_title span { background-color: var(--bg5); }
-.check_title h3 { display: flex; justify-content: left; line-height: 1.8rem; padding-left: 10px; letter-spacing: -1px; font-size: 1.5rem; padding-top: 14px; } 
+.check_title h3 { display: flex; justify-content: left; line-height: 2rem; padding-left: 10px; font-size: 1.5rem; padding-top: 14px; } 
 
 
 #finish2 .radio-group { border: 1px solid var(--bg2); } 
@@ -218,4 +221,4 @@ input[type="radio"]:checked+img { background-color: var(--check_bg1); }
 
 .box3 .submit-button { margin: 19px auto; } 
 
-.btn_box { width: 100%; display: flex; justify-content: center; align-items: center;  }
+.btn_box { width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 13px; }

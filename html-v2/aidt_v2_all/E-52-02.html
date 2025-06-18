@@ -9,108 +9,111 @@
     <title>17-스스로 평가</title>
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css" />
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/self_check.css">
+    <!-- 브라우저 번역(다국어 관련) -->
+	<link rel="stylesheet" href="css/GoogleTranslate.css">
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
     <script src="https://acv001.aiktbook.com/api/static/message-channel-iframe.js"></script>
 </head>
 
-<body>
-    <div id="finish5" class="container finish">
-        <form id="frm364" onsubmit="return false">
-            <div class="box_container">
-                <header>
-                    <div class="title">
-                        <h1>이번 단원에서 배운 내용을 스스로 평가해 볼까요?</h1>
-                        <input type="hidden" name="aidt_pageTitle" value="이번 단원에서 학습한 내용을 생각하며 학습 목표를 정리해요.">
-                    </div>
-                    <div class="tit_choice">
-                        <p>해당되는 항목을 <img src="./img/choice.png" alt="손모양 마우스커서">선택해 주세요.</p>
-                        <div class="tit_icon">
-                            <div>
-                                <img class="icon check_bg5" src="./img/good.png" alt="보통">
-                                <span class="icon_txt">보통</span>
-                            </div>
-                            <div>
-                                <img class="icon check_bg5" src="./img/great.png" alt="잘함">
-                                <span class="icon_txt">잘함</span>
-                            </div>
-                            <div>
-                                <img class="icon check_bg5" src="./img/excellent.png" alt="매우 잘함">
-                                <span class="icon_txt">매우 잘함</span>
-                            </div>
+<body class="resize_bg">
+    <div class="wrap_resize">
+        <div id="finish5" class="container finish">
+            <form id="frm364" onsubmit="return false">
+                <div class="box_container">
+                    <header>
+                        <div class="title">
+                            <h1>이번 단원에서 배운 내용을 스스로 평가해 볼까요?</h1>
+                            <input type="hidden" name="aidt_pageTitle" value="이번 단원에서 학습한 내용을 생각하며 학습 목표를 정리해요.">
                         </div>
-                    </div>
-                </header>
-                <div class="form_box">
-                    <div class="box2">
-                        <div class="box_wrap">
-                            <div class="check_title">
-                                <div class="title_ico"></div>
-                                <span>지식·이해</span>
-                                <h3>개인정보의 중요성에 대해 설명할 수 있나요?
-                                </h3>
-                            </div>
-                                <div class="radio-group">
-                                    <input type="hidden" name="aidt_examId" value="1">
-                                    <input type="hidden" name="aidt_exam" value="개인정보의 중요성에 대해 설명할 수 있나요?">
-                                    <input type="hidden" name="aidt_answer" value="">
-                                    <input type="hidden" name="aidt_mcqYn" value="N">
-                                    <input type="hidden" name="aidt_type" value="radio">
-                                    <label class="radio-label">
-                                        <input type="radio" name="aidt_input1" data-group-id="1" value="보통">
-                                        <img src="./img/good.png" alt="보통">
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" name="aidt_input1" data-group-id="1" value="잘함">
-                                        <img src="./img/great.png" alt="잘함">
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" name="aidt_input1" data-group-id="1" value="매우 잘함">
-                                        <img src="./img/excellent.png" alt="매우 잘함">
-                                    </label>
+                        <div class="tit_choice">
+                            <p>해당되는 항목을 <img src="./img/choice.png" alt="손모양 마우스커서">선택해 주세요.</p>
+                            <div class="tit_icon">
+                                <div>
+                                    <img class="icon check_bg5" src="./img/good.png" alt="보통">
+                                    <span class="icon_txt">보통</span>
                                 </div>
-                        </div>
-
-                        <div class="box_wrap">
-                            <div class="check_title">
-                                <div class="title_ico"></div>
-                                <span>과정·기능</span>
-                                <h3>개인정보 유출 시 올바르게 대처할 수 있나요?</h3>
-                            </div>
-                                <div class="radio-group">
-                                    <input type="hidden" name="aidt_examId" value="2">
-                                    <input type="hidden" name="aidt_exam" value="온개인정보 유출 시 올바르게 대처할 수 있나요?">
-                                    <input type="hidden" name="aidt_answer" value="">
-                                    <input type="hidden" name="aidt_mcqYn" value="N">
-                                    <input type="hidden" name="aidt_type" value="radio">
-                                    <label class="radio-label">
-                                        <input type="radio" name="aidt_input2" data-group-id="2" value="보통">
-                                        <img src="./img/good.png" alt="보통">
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" name="aidt_input2" data-group-id="2" value="잘함">
-                                        <img src="./img/great.png" alt="잘함">
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" name="aidt_input2" data-group-id="2" value="매우 잘함">
-                                        <img src="./img/excellent.png" alt="매우 잘함">
-                                    </label>
+                                <div>
+                                    <img class="icon check_bg5" src="./img/great.png" alt="잘함">
+                                    <span class="icon_txt">잘함</span>
                                 </div>
+                                <div>
+                                    <img class="icon check_bg5" src="./img/excellent.png" alt="매우 잘함">
+                                    <span class="icon_txt">매우 잘함</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn_box">
-                            <button id="btn1" type="submit" class="submit-button">제출하기</button>
-                            <button id="btn1_1" type="submit" class="submit-button" style="display: none">다시 제출하기</button>    
+                    </header>
+                    <div class="form_box">
+                        <div class="box2">
+                            <div class="box_wrap">
+                                <div class="check_title">
+                                    <div class="title_ico"></div>
+                                    <span>지식·이해</span>
+                                    <h3>개인정보의 중요성에 대해 설명할 수 있나요?
+                                    </h3>
+                                </div>
+                                    <div class="radio-group">
+                                        <input type="hidden" name="aidt_examId" value="1">
+                                        <input type="hidden" name="aidt_exam" value="개인정보의 중요성에 대해 설명할 수 있나요?">
+                                        <input type="hidden" name="aidt_answer" value="">
+                                        <input type="hidden" name="aidt_mcqYn" value="N">
+                                        <input type="hidden" name="aidt_type" value="radio">
+                                        <label class="radio-label">
+                                            <input type="radio" name="aidt_input1" data-group-id="1" value="보통">
+                                            <img src="./img/good.png" alt="보통">
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="aidt_input1" data-group-id="1" value="잘함">
+                                            <img src="./img/great.png" alt="잘함">
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="aidt_input1" data-group-id="1" value="매우 잘함">
+                                            <img src="./img/excellent.png" alt="매우 잘함">
+                                        </label>
+                                    </div>
+                            </div>
+    
+                            <div class="box_wrap">
+                                <div class="check_title">
+                                    <div class="title_ico"></div>
+                                    <span>과정·기능</span>
+                                    <h3>개인정보 유출 시 올바르게 대처할 수 있나요?</h3>
+                                </div>
+                                    <div class="radio-group">
+                                        <input type="hidden" name="aidt_examId" value="2">
+                                        <input type="hidden" name="aidt_exam" value="온개인정보 유출 시 올바르게 대처할 수 있나요?">
+                                        <input type="hidden" name="aidt_answer" value="">
+                                        <input type="hidden" name="aidt_mcqYn" value="N">
+                                        <input type="hidden" name="aidt_type" value="radio">
+                                        <label class="radio-label">
+                                            <input type="radio" name="aidt_input2" data-group-id="2" value="보통">
+                                            <img src="./img/good.png" alt="보통">
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="aidt_input2" data-group-id="2" value="잘함">
+                                            <img src="./img/great.png" alt="잘함">
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="aidt_input2" data-group-id="2" value="매우 잘함">
+                                            <img src="./img/excellent.png" alt="매우 잘함">
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="btn_box">
+                                <button id="btn1" type="submit" class="submit-button">제출하기</button>
+                                <button id="btn1_1" type="submit" class="submit-button" style="display: none">다시 제출하기</button>    
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
-        <div id="modal" class="modal hide">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p id="result"></p>
+            </form>
+            <div id="modal" class="modal hide">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="result"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -195,6 +198,10 @@
             }
         });
     </script>
+    <script>
+		const contentId = 'E-52-02';
+	</script>
+	<script type="text/javascript" src="./js/xapi.page.js"></script>
 </body>
 
 </html>

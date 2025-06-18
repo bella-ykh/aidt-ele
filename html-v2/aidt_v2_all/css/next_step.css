@@ -39,12 +39,14 @@ select { -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; a
 
 
 /* Layout */
-.wrap { width: 1280px; height: 800px; margin: 0 auto; position: relative; z-index: 1;}
+body.resize_bg { background-color: #F5F8F9;}
+.wrap_resize { width: 1600px; height: 900px; margin: 0 auto; }
+.wrap { width: 1440px; height: 900px; margin: 0 auto; position: relative; z-index: 1;}
 
 /* 보충,심화 배경 */
 .step_bg {background: url('../img/step_bg.jpg') no-repeat; background-size: 100% 100%;}
 
-.title { width: 100%; text-align: center; padding-top: 16%; }
+.title { width: 100%; text-align: center; padding-top: 18%; }
 .title h1 { font-size: 50px; letter-spacing: -1px; text-align: center; font-family: Pretendard,"Pretendard",sans-serif;}
 .title p {font-size: 31px; text-align: center; padding: 50px 0 60px;font-family: Pretendard,"Pretendard",sans-serif;}
 .title p strong { background-color: #49A600; color: #fff; border-radius: 8px; font-weight: 400; padding: 8px 10px; }

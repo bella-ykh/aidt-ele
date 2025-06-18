@@ -10,12 +10,15 @@
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css" />
     <link rel="stylesheet" href="css/activity.css">
+    <!-- 브라우저 번역(다국어 관련) -->
+	<link rel="stylesheet" href="css/GoogleTranslate.css">
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
     <script src="https://acv001.aiktbook.com/api/static/message-screenShot-iframe.js"></script>
 </head>
 
-<body>
+<body class="resize_bg">
+  <div class="wrap_resize">
     <div class="container top_bg1">
         <header>
             <div class="title" tabindex="0">
@@ -28,7 +31,7 @@
         </header>
 
         <div class="cont_wrap mg_t32">
-            <div class="w_660">
+            <div class="w_800">
                 <div class="ex_title">보기</div>
                 <table class="tbl_style">
                     <caption>나의 과의존 진단</caption>
@@ -45,18 +48,19 @@
                       </tr>
                       <tr>
                         <td class="left_rd"></td>
-                        <td>도형을 이용해 보세요</td>
+                        <td class="font_20">도형을 이용해 보세요</td>
                         <td></td>
                       </tr>
                     </tbody>
                   </table>
             </div>
             <div class="w_488">
-                <img src="./img/img1-5.png" alt="*과의존이란?
+                <img src="./img/img1-5.png" class="mg_t60" alt="*과의존이란?
                     정보 기기를 너무 많이 사용하는 것으로, 이로 말미암아 정보 기기 사용을 조절하는 능력이 감소하여 여러 가지 문제를 경험하는 상태를 말합니다.">
             </div>
         </div>
     </div>
+  </div>
     <script>
         new ScreenShotAPI() 
     </script>
