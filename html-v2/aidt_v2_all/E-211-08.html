@@ -10,54 +10,58 @@
     <link rel="stylesheet" type="text/css" href="css/font/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="css/font/pretendard-subset.css" />
     <link rel="stylesheet" href="css/activity.css">
+    <!-- 브라우저 번역(다국어 관련) -->
+	<link rel="stylesheet" href="css/GoogleTranslate.css">
     <script type="text/javascript" src="js/GoogleTranslate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateInitCallback"></script>
     <script src="https://acv001.aiktbook.com/api/static/message-screenShot-iframe.js"></script>
 </head>
 
-<body>
-    <div class="container top_bg2">
-        <header>
-            <div class="title" tabindex="0">
-                <div class="tit_icon icon_bg2">활동</div>
-                <h1>데이터 찾기 놀이</h1>
-            </div>
-            <div class="tit_txt" tabindex="0">모둠별로 제시어와 관련된 데이터 찾기 놀이를 해 봅시다.</div>
-        </header>
-
-        <div class="cont_wrap mg_t20">
-            <div class="w_400">
-                <div class="method">
-                    <span class="activity_way pst_100">활동 방법</span>
-                    <ul class="indent_list">
-                        <li><span>❶</span>모둠원 1명이 제시어를 말합니다.</li>
-                        <li><span>❷</span>다른 모둠원들은 그 제시어와 관련된 여러 유형의 데이터를 찾아 작성합니다.</li>
-                        <li><span>❸</span>모둠원들이 작성한 데이터가 적절한지 이야기합니다.</li>
-                    </ul>
+<body class="resize_bg">
+    <div class="wrap_resize">
+        <div class="container top_bg2">
+            <header>
+                <div class="title" tabindex="0">
+                    <div class="tit_icon icon_bg2">활동</div>
+                    <h1>데이터 찾기 놀이</h1>
                 </div>
-                <div class="method mg_t32">
-                    <span class="activity_way pst_100">활동 예시</span>
-                    <div class="ex_view">
-                        <div class="ex_txt">제시어: 눈사람</div>
-                        <img src="./img/img2-1.png" alt="제시어 눈사람으로 활동될 예제: 눈사람 사진, 울라프, 눈내리는 영상, snow, 겨울">
+                <div class="tit_txt" tabindex="0">모둠별로 제시어와 관련된 데이터 찾기 놀이를 해 봅시다.</div>
+            </header>
+    
+            <div class="cont_wrap mg_t10">
+                <div class="w_400">
+                    <div class="method mg_t32">
+                        <span class="activity_way pst_100">활동 방법</span>
+                        <ul class="indent_list">
+                            <li><span>❶</span>모둠원 1명이 제시어를 말합니다.</li>
+                            <li><span>❷</span>다른 모둠원들은 그 제시어와 관련된 여러 유형의 데이터를 찾아 작성합니다.</li>
+                            <li><span>❸</span>모둠원들이 작성한 데이터가 적절한지 이야기합니다.</li>
+                        </ul>
+                    </div>
+                    <div class="method mg_t50">
+                        <span class="activity_way pst_100">활동 예시</span>
+                        <div class="ex_view">
+                            <div class="ex_txt">제시어: 눈사람</div>
+                            <img src="./img/img2-1.png" alt="제시어 눈사람으로 활동될 예제: 눈사람 사진, 울라프, 눈내리는 영상, snow, 겨울">
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="w_750">
-                <h3 class="txt_ico" tabindex="0">우리 모둠의 제시어를 적어 봅시다.</h3>
-                <div class="activity_box h_60">
-                    <span class="box_in_tit">제시어:</span>
-                    글상자를 이용해 보세요.
-                </div>
-
-                <h3 class="txt_ico mg_t20" tabindex="0">제시어와 관련된 내용을 작성해 봅시다.</h3>
-                <div class="activity_box h_240">다양한 도구를 이용해 내용을 작성해 보세요.</div>
-
-                <div class="talk_robot">
-                    <div class="talk_bubble">
-                        소리, 영상 데이터는 글로 설명해 주세요.
-                        <span>예) 눈 내리는 영상, 뽀드득 눈 밟는 소리</span>
+    
+                <div class="w_900 mg_t20">
+                    <h3 class="txt_ico" tabindex="0">우리 모둠의 제시어를 적어 봅시다.</h3>
+                    <div class="activity_box h_60">
+                        <span class="box_in_tit">제시어:</span>
+                        글상자를 이용해 보세요.
+                    </div>
+    
+                    <h3 class="txt_ico mg_t32" tabindex="0">제시어와 관련된 내용을 작성해 봅시다.</h3>
+                    <div class="activity_box h_280">다양한 도구를 이용해 내용을 작성해 보세요.</div>
+    
+                    <div class="talk_robot">
+                        <div class="talk_bubble">
+                            소리, 영상 데이터는 글로 설명해 주세요.
+                            <span>예) 눈 내리는 영상, 뽀드득 눈 밟는 소리</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,6 +70,10 @@
     <script>
         new ScreenShotAPI() 
     </script>
+    <script>
+        const contentId = 'E-211-08';
+    </script>
+    <script type="text/javascript" src="./js/xapi.page.js"></script>
 </body>
 
 </html>

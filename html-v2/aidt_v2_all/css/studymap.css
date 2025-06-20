@@ -104,7 +104,7 @@ body.resize_bg { background-color: #F5F8F9;}
 .character4 { background: url('../img/char_jump2.gif') no-repeat; background-size: 8% auto; } /*3단원만 컬러조정*/
 /* 차시별 캐릭터 좌표 */
 .move1 { background-position: 1% 80%; } 
-.move1_1 { background-position: 12% 80.5%; }
+.move1_1 { background-position: 11% 80.5%; }
 .move1_2 { background-position: 38% 61%; }
 .move1_3 { background-position: 40% 24%; }
 .move1_4 { background-position: 66% 1%; }
@@ -178,7 +178,7 @@ h2 { font-size: 22px; text-align: center; line-height: 24px; padding-top: 18px; 
 
 /********* 차시별 상세 위치 *********/
 .view1_1 { position: absolute; left: 14.2%; top: 47.8%; z-index: 3; }
-.view1_2 { position: absolute; left: 47.7%; top: 58.8%; z-index: 3; }
+.view1_2 { position: absolute; left: 47.7%; top: 59%; z-index: 3; }
 .view1_3 { position: absolute; left: 20%; top: 36%; z-index: 3; }
 .view1_4 { position: absolute; left: 55%; top: 29%; z-index: 3; }
 .view1_5 { position: absolute; left: 75.7%; top: 29%; z-index: 3; }
@@ -204,11 +204,11 @@ h2 { font-size: 22px; text-align: center; line-height: 24px; padding-top: 18px; 
 
 .view_title { font-size: 26px; color: #fff; font-weight: bold; text-align: center; line-height: 35px; z-index: 3; }
 /* 상세 포인터컬러 */
-.list_top_1 { font-size: 24px; color: #0864a3; padding: 23px 0 13px; line-height: 28px;}
-.list_top_2 { font-size: 24px; color: #4b9900; padding: 23px 0 13px; line-height: 28px;}
-.list_top_3 { font-size: 24px; color: #028480; padding: 23px 0 13px; line-height: 28px;}
-.list_top_4 { font-size: 24px; color: #914060; padding: 23px 0 13px; line-height: 28px;}
-.list_top_5 { font-size: 24px; color: #4c439e; padding: 23px 0 13px; line-height: 28px;}
+.list_top_1 { font-size: 24px; color: #0864a3; padding: 30px 0 13px; line-height: 28px;}
+.list_top_2 { font-size: 24px; color: #4b9900; padding: 30px 0 13px; line-height: 28px;}
+.list_top_3 { font-size: 24px; color: #028480; padding: 30px 0 13px; line-height: 28px;}
+.list_top_4 { font-size: 24px; color: #914060; padding: 30px 0 13px; line-height: 28px;}
+.list_top_5 { font-size: 24px; color: #4c439e; padding: 30px 0 13px; line-height: 28px;}
 
 
 .list_txt { list-style-position: inside; padding-left: 10px; font-size: 20px; line-height: 30px; font-weight: bold;}
