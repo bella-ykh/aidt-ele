@@ -230,10 +230,12 @@ h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-he
 
 
 
-    h1 { font-size: 40px; padding: 33px 0 75px; }
-    .top_bg1 { width: 100vw; background-size: contain; }
-    .top_title1 { width: 70vw; background-size: 100% auto; margin-bottom: 30px; } 
-    .top_title2 { width: 48vw; background-size: 100% auto; }
+    h1 { font-size: 3.85vw; padding: 0 0 3vw; }
+    .top_bg1 { width: 100vw; background-size: contain; background-position: 0 0;}
+    .top_title1 { width: 58.77vw; height: 8.15vw; background-size: 100% auto; background-position: center; margin-bottom: 30px; } 
+    .top_title2 { width: 48vw; height: 7.15vw; background-size: 80% auto; background-position: center; margin: 0 auto 3.6vw; }
+
+    .top_txt { font-size: 2.5vw; line-height: 2rem;}
 
     .top_bg2 { width: 100vw; background-size: contain; }
     h2 { font-size: 28px; padding: 30px; line-height: 50px;}
