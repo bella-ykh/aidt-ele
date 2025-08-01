@@ -67,13 +67,17 @@ header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; backgroun
 
 /******* 홈 *******/
 .wrap_bg1 { width: 100%; background: url('../img/top_bg1_2.png') repeat-x 0 bottom; padding-top: 100px; } 
-h1 { color: #fff; padding: 150px 0 40px; font-size: 50px; text-align: center; font-weight: 500; } 
+h1 { color: #fff; padding: 70px 0 40px; font-size: 50px; text-align: center; font-weight: 500; } 
 .top_bg1 { width: 1300px; margin: 0 auto; background: url('../img/top_bg1.png') no-repeat center 30px; min-height: 950px; } 
-.top_title1 { width: 764px; height: 106px; background: url('../img/top_title_01.png') no-repeat; margin: 0 auto 80px; text-indent: -999px; font-size: 0; } 
-.top_title2 { width: 636px; height: 93px; background: url('../img/top_title_02.png') no-repeat; margin: 0 auto 110px; text-indent: -999px; font-size: 0; } 
+.top_title1 { width: 764px; height: 106px; background: url('../img/top_title_01.png') no-repeat; margin: 0 auto 60px; text-indent: -999px; font-size: 0; } 
+.top_title2 { width: 636px; height: 93px; background: url('../img/top_title_02.png') no-repeat; margin: 0 auto 50px; text-indent: -999px; font-size: 0; } 
 
+.top_txt { width: 700px; color: #fff; text-align: center; font-size: 26px; font-weight: 600; line-height: 2.5rem; border-bottom: solid 2px #fff; margin: 0 auto; padding-bottom: 25px;}
+.btn_class { text-align: center; font-size: 26px; font-weight: 600; color: #fff; }
 /* 버튼 */
-.btns { height: 90px; display: flex; flex-direction: row; justify-content: center; gap: 52px; margin: 0 auto; } 
+.btn_wrap { width: 700px; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; border-bottom: solid 2px #fff; padding: 15px 0 25px; } 
+.btns { display: flex; flex-direction: row; justify-content: center; gap: 52px; margin: 0 auto;  } 
+
 .btn_menu { width: 280px; height: 80px; cursor: pointer; border: solid 5px #071c57; border-radius: 100px; background-color: #ffde00; font-size: 30px; font-weight: bold; outline: none; color: #071c57; } 
 .btn_menu:hover,
 .btn_menu:focus,
@@ -92,7 +96,8 @@ h1 { color: #fff; padding: 150px 0 40px; font-size: 50px; text-align: center; fo
 #studentDropdown a:focus,
 #studentDropdown a:active { height: 50px; background-color: #fff; } 
 
-
+.info_txt { text-align: center; margin: 0 auto; font-size: 32px; color: #fff; font-weight: 500; }
+.info_txt p { padding: 17px 0; line-height: 42px; text-shadow: -1px -1px 4px #333, 1px 1px 4px #071c57;}
 
 
 /******* 소개 *******/
@@ -131,14 +136,13 @@ h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-he
 .nav-button img.disabled { display: none; } 
 .nav-button[disabled] img { display: none; } 
 .nav-button[disabled] img.disabled { display: block; } 
-.indicators { display: flex; justify-content: center; margin-top: 30px; } 
+.indicators { display: flex; justify-content: center; margin-top: 15px; } 
 .indicator { width: 30px; height: 30px; background-color: #ddd; border-radius: 50%; margin: 0 5px; transition: all 0.3s ease; } 
 .indicator.current { width: 60px; background-color: #ffc323; border-radius: 30px; } 
 
 .unit { margin: 0 auto; } 
-.unit dt { margin-bottom: 30px; } 
-.unit dd { font-size: 30px; line-height: 40px; color: #000; } 
-.unit dd strong { display: block; font-family: 'WAGURITTF'; font-size: 60px; line-height: 36px; color: #000; padding-bottom: 42px; } 
+.unit dt { font-size: 30px; line-height: 40px; color: #000; margin-bottom: 30px; padding-top: 20px; } 
+.unit dt strong { display: block; font-family: 'WAGURITTF'; font-size: 60px; line-height: 36px; color: #000; padding-bottom: 25px; } 
 
 
 /******* AI기능 *******/
@@ -166,10 +170,9 @@ h2 { font-family: 'ONE Mobile Title'; font-size: 50px; font-weight: 400; line-he
 .content-panel { display: none; } 
 .content-panel.active { display: block; } 
 
-.dashboard { margin: 50px auto 80px; } 
-.dashboard dt { margin-bottom: 50px; } 
-.dashboard dd { font-size: 30px; line-height: 40px; color: #000; margin-top: 80px;} 
-.dashboard dd strong { display: block; font-family: 'WAGURITTF'; font-size: 60px; line-height: 36px; color: #000; padding-bottom: 42px; } 
+.dashboard { margin: 20px auto 80px; } 
+.dashboard dt { font-size: 30px; line-height: 40px; color: #000; margin-bottom: 50px;} 
+.dashboard dt strong { display: block; font-family: 'WAGURITTF'; font-size: 60px; line-height: 36px; color: #000; padding-bottom: 42px; } 
 
 .dashboard dd.dot { border-bottom: dotted 2px #999; padding-bottom: 80px; } 
 
